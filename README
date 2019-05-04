@@ -1,0 +1,17 @@
+NAME
+
+    ATmega UNI - Universal ATmega PCB in Arduino UNO (shield) size
+
+DESCRIPTION
+
+    ATmega PCB designed in KiCad with an aim to be as universali used as
+    possible in a shape and dimensions of Arduino UNO.
+
+LICENSE
+
+    This is free software, licensed under the MIT License.
+
+AUTHOR
+
+        Jozef Kutej
+
