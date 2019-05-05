@@ -452,25 +452,12 @@ Wire Wire Line
 Connection ~ 9800 1900
 Wire Wire Line
 	9800 1900 10000 1900
-$Comp
-L Power_Protection:SP0504BAJT D7
-U 1 1 5CC961C2
-P 2150 6100
-F 0 "D7" H 1945 6054 50  0000 R CNN
-F 1 "SP0504BAJT" H 1945 6145 50  0000 R CNN
-F 2 "Package_TO_SOT_SMD:SOT-353_SC-70-5" H 2450 6050 50  0001 L CNN
-F 3 "http://www.littelfuse.com/~/media/files/littelfuse/technical%20resources/documents/data%20sheets/sp05xxba.pdf" H 2275 6225 50  0001 C CNN
-	1    2150 6100
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	1100 6400 1100 6550
 Wire Wire Line
 	2600 6400 2500 6400
 Wire Wire Line
 	2500 6400 2500 5900
-Wire Wire Line
-	2500 5900 2150 5900
 Wire Wire Line
 	2500 6400 1100 6400
 Connection ~ 2500 6400
@@ -479,14 +466,7 @@ Wire Wire Line
 Wire Wire Line
 	2500 6500 2500 6400
 Wire Wire Line
-	2600 6600 2250 6600
-Wire Wire Line
 	1700 6700 2050 6700
-Wire Wire Line
-	2250 6300 2250 6600
-Connection ~ 2250 6600
-Wire Wire Line
-	2250 6600 1700 6600
 Wire Wire Line
 	1950 6300 1950 6900
 Connection ~ 1950 6900
@@ -583,17 +563,12 @@ Wire Wire Line
 Wire Wire Line
 	3950 6400 4250 6400
 Wire Wire Line
-	4250 6200 4150 6200
-Wire Wire Line
 	3850 6200 3850 6100
 Wire Wire Line
 	4050 6500 4050 6300
 Connection ~ 4050 6300
 Wire Wire Line
 	4050 6300 3850 6300
-Connection ~ 4150 6200
-Wire Wire Line
-	4150 6200 3850 6200
 Wire Wire Line
 	4250 5900 4250 6100
 Connection ~ 4250 6200
@@ -625,13 +600,9 @@ F 3 "" H 3900 5800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4200 5900 4250 5900
-Wire Wire Line
 	3950 5750 3900 5750
 Wire Wire Line
 	3900 5750 3900 5800
-Wire Wire Line
-	4150 6200 4150 6500
 NoConn ~ 4250 5700
 NoConn ~ 4250 5600
 NoConn ~ 5450 5300
@@ -657,7 +628,7 @@ L Connector:Barrel_Jack_MountingPin J5
 U 1 1 5CD18897
 P 8500 4450
 F 0 "J5" H 8555 4767 50  0000 C CNN
-F 1 "Barrel_Jack_MountingPin" H 8555 4676 50  0000 C CNN
+F 1 "PWR_Jack" H 8555 4676 50  0000 C CNN
 F 2 "Connector_BarrelJack:BarrelJack_Wuerth_6941xx301002" H 8550 4410 50  0001 C CNN
 F 3 "~" H 8550 4410 50  0001 C CNN
 	1    8500 4450
@@ -674,8 +645,6 @@ F 3 "http://www.advanced-monolithic.com/pdf/ds1117.pdf" H 9700 4200 50  0001 C C
 	1    9600 4450
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	8800 4350 8900 4350
 Wire Wire Line
 	8800 4550 8800 4750
 Wire Wire Line
@@ -696,10 +665,6 @@ F 3 "" H 9600 4850 50  0001 C CNN
 	1    9600 4850
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	8900 4350 8900 4450
-Wire Wire Line
-	8900 4450 9100 4450
 $Comp
 L Device:CP1_Small C51
 U 1 1 5CD3B6FA
@@ -789,24 +754,13 @@ Wire Wire Line
 $Comp
 L power:+5V #PWR0115
 U 1 1 5CC97423
-P 1700 6600
-F 0 "#PWR0115" H 1700 6450 50  0001 C CNN
-F 1 "+5V" H 1715 6773 50  0000 C CNN
-F 2 "" H 1700 6600 50  0001 C CNN
-F 3 "" H 1700 6600 50  0001 C CNN
-	1    1700 6600
+P 2500 7350
+F 0 "#PWR0115" H 2500 7200 50  0001 C CNN
+F 1 "+5V" H 2515 7523 50  0000 C CNN
+F 2 "" H 2500 7350 50  0001 C CNN
+F 3 "" H 2500 7350 50  0001 C CNN
+	1    2500 7350
 	1    0    0    -1  
-$EndComp
-$Comp
-L power:+5V #PWR0116
-U 1 1 5CC9746D
-P 4200 6100
-F 0 "#PWR0116" H 4200 5950 50  0001 C CNN
-F 1 "+5V" V 4215 6228 50  0000 L CNN
-F 2 "" H 4200 6100 50  0001 C CNN
-F 3 "" H 4200 6100 50  0001 C CNN
-	1    4200 6100
-	0    -1   -1   0   
 $EndComp
 Wire Wire Line
 	4200 6100 4250 6100
@@ -846,7 +800,7 @@ Wire Wire Line
 Text GLabel 9100 4300 1    50   Input ~ 0
 RAW
 Wire Wire Line
-	9100 4300 9100 4450
+	9100 4300 9100 4350
 Wire Wire Line
 	1700 6800 2150 6800
 Wire Wire Line
@@ -1294,4 +1248,129 @@ Wire Wire Line
 Connection ~ 6850 3450
 Text Notes 6850 3600 0    50   ~ 0
 I2C Pullups
+Text GLabel 1600 7400 0    50   Input ~ 0
+USB_5V
+Wire Wire Line
+	1600 7400 1850 7400
+$Comp
+L Device:Jumper JP9
+U 1 1 5CD02BCD
+P 2150 7400
+F 0 "JP9" H 2150 7664 50  0000 C CNN
+F 1 "USB_5V" H 2150 7573 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 2150 7400 50  0001 C CNN
+F 3 "~" H 2150 7400 50  0001 C CNN
+	1    2150 7400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2450 7400 2500 7400
+Wire Wire Line
+	2500 7400 2500 7350
+Text GLabel 1700 6600 0    50   Input ~ 0
+USB_5V
+Text GLabel 4200 6100 0    50   Input ~ 0
+USB_5V
+Wire Wire Line
+	3850 6200 4250 6200
+Wire Wire Line
+	4150 6500 4300 6500
+Wire Wire Line
+	4300 7150 4450 7150
+Wire Wire Line
+	4450 7150 4450 7100
+$Comp
+L power:+5V #PWR0116
+U 1 1 5CD35602
+P 4450 7100
+F 0 "#PWR0116" H 4450 6950 50  0001 C CNN
+F 1 "+5V" H 4465 7273 50  0000 C CNN
+F 2 "" H 4450 7100 50  0001 C CNN
+F 3 "" H 4450 7100 50  0001 C CNN
+	1    4450 7100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 6500 4300 7150
+Wire Wire Line
+	1700 6600 2600 6600
+$Comp
+L Power_Protection:SP0503BAHT D7
+U 1 1 5CD46FC5
+P 2050 6100
+F 0 "D7" H 2255 6146 50  0000 L CNN
+F 1 "SP0503BAHT" H 2255 6055 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-143" H 2275 6050 50  0001 L CNN
+F 3 "http://www.littelfuse.com/~/media/files/littelfuse/technical%20resources/documents/data%20sheets/sp05xxba.pdf" H 2175 6225 50  0001 C CNN
+	1    2050 6100
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2050 5900 2500 5900
+$Comp
+L power:GND #PWR0126
+U 1 1 5CD506BB
+P 6600 5850
+F 0 "#PWR0126" H 6600 5600 50  0001 C CNN
+F 1 "GND" H 6605 5677 50  0000 C CNN
+F 2 "" H 6600 5850 50  0001 C CNN
+F 3 "" H 6600 5850 50  0001 C CNN
+	1    6600 5850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0127
+U 1 1 5CD50712
+P 7400 5750
+F 0 "#PWR0127" H 7400 5600 50  0001 C CNN
+F 1 "+5V" H 7415 5923 50  0000 C CNN
+F 2 "" H 7400 5750 50  0001 C CNN
+F 3 "" H 7400 5750 50  0001 C CNN
+	1    7400 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R9
+U 1 1 5CD50827
+P 7150 5800
+F 0 "R9" V 7357 5800 50  0000 C CNN
+F 1 "1k" V 7266 5800 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 7080 5800 50  0001 C CNN
+F 3 "~" H 7150 5800 50  0001 C CNN
+	1    7150 5800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D9
+U 1 1 5CD509B1
+P 6850 5800
+F 0 "D9" H 6842 5545 50  0000 C CNN
+F 1 "PWR" H 6842 5636 50  0000 C CNN
+F 2 "LED_THT:LED_D3.0mm" H 6850 5800 50  0001 C CNN
+F 3 "~" H 6850 5800 50  0001 C CNN
+	1    6850 5800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7300 5800 7400 5800
+Wire Wire Line
+	7400 5800 7400 5750
+Wire Wire Line
+	6700 5800 6600 5800
+Wire Wire Line
+	6600 5800 6600 5850
+$Comp
+L Device:D D5
+U 1 1 5CD6399C
+P 8950 4350
+F 0 "D5" H 8950 4134 50  0000 C CNN
+F 1 "D" H 8950 4225 50  0000 C CNN
+F 2 "Diode_SMD:D_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 8950 4350 50  0001 C CNN
+F 3 "~" H 8950 4350 50  0001 C CNN
+	1    8950 4350
+	-1   0    0    1   
+$EndComp
+Connection ~ 9100 4350
+Wire Wire Line
+	9100 4350 9100 4450
 $EndSCHEMATC
