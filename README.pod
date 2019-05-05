@@ -9,7 +9,7 @@ possible in a shape and dimensions of Arduino UNO.
 
 =head1 LICENSE
 
-This is free software, licensed under the MIT License.
+This is free software & hardware, licensed under the MIT License.
 
 =head1 AUTHOR
 
