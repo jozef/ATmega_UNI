@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:ATmega_UNI-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -1373,4 +1372,158 @@ $EndComp
 Connection ~ 9100 4350
 Wire Wire Line
 	9100 4350 9100 4450
+$Comp
+L Connector:Conn_01x04_Female J611
+U 1 1 5CD06A31
+P 3700 4500
+F 0 "J611" H 3728 4476 50  0000 L CNN
+F 1 "I2C" H 3728 4385 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 3700 4500 50  0001 C CNN
+F 3 "~" H 3700 4500 50  0001 C CNN
+	1    3700 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x03_Female J62
+U 1 1 5CD06D99
+P 3700 5000
+F 0 "J62" H 3727 5026 50  0000 L CNN
+F 1 "3uni" H 3727 4935 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 3700 5000 50  0001 C CNN
+F 3 "~" H 3700 5000 50  0001 C CNN
+	1    3700 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x03_Female J63
+U 1 1 5CD06E9E
+P 3700 5350
+F 0 "J63" H 3727 5376 50  0000 L CNN
+F 1 "3uni" H 3727 5285 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 3700 5350 50  0001 C CNN
+F 3 "~" H 3700 5350 50  0001 C CNN
+	1    3700 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0128
+U 1 1 5CD06F48
+P 2900 4450
+F 0 "#PWR0128" H 2900 4200 50  0001 C CNN
+F 1 "GND" H 2905 4277 50  0000 C CNN
+F 2 "" H 2900 4450 50  0001 C CNN
+F 3 "" H 2900 4450 50  0001 C CNN
+	1    2900 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0129
+U 1 1 5CD06FD7
+P 3000 4350
+F 0 "#PWR0129" H 3000 4200 50  0001 C CNN
+F 1 "+5V" H 3015 4523 50  0000 C CNN
+F 2 "" H 3000 4350 50  0001 C CNN
+F 3 "" H 3000 4350 50  0001 C CNN
+	1    3000 4350
+	1    0    0    -1  
+$EndComp
+Text GLabel 3500 4600 0    50   Input ~ 0
+SDA
+Text GLabel 3500 4700 0    50   Input ~ 0
+SCL
+Wire Wire Line
+	3500 4500 3000 4500
+Wire Wire Line
+	3000 4500 3000 4350
+Wire Wire Line
+	3500 4400 2900 4400
+Wire Wire Line
+	2900 4400 2900 4450
+$Comp
+L power:GND #PWR0130
+U 1 1 5CD19A78
+P 3400 5500
+F 0 "#PWR0130" H 3400 5250 50  0001 C CNN
+F 1 "GND" H 3405 5327 50  0000 C CNN
+F 2 "" H 3400 5500 50  0001 C CNN
+F 3 "" H 3400 5500 50  0001 C CNN
+	1    3400 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0131
+U 1 1 5CD3638B
+P 3300 5000
+F 0 "#PWR0131" H 3300 4850 50  0001 C CNN
+F 1 "+5V" H 3315 5173 50  0000 C CNN
+F 2 "" H 3300 5000 50  0001 C CNN
+F 3 "" H 3300 5000 50  0001 C CNN
+	1    3300 5000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 5100 3300 5100
+Wire Wire Line
+	3500 5450 3300 5450
+Wire Wire Line
+	3300 5450 3300 5100
+Wire Wire Line
+	3400 4900 3400 5250
+Wire Wire Line
+	3400 4900 3500 4900
+Wire Wire Line
+	3400 5250 3500 5250
+Wire Wire Line
+	3300 5100 3300 5000
+Connection ~ 3300 5100
+Connection ~ 3400 5250
+Wire Wire Line
+	3400 5250 3400 5500
+Wire Wire Line
+	3500 5000 3500 5350
+$Comp
+L Connector:Conn_01x04_Female J612
+U 1 1 5CDBDDCC
+P 3700 3850
+F 0 "J612" H 3728 3826 50  0000 L CNN
+F 1 "I2C" H 3728 3735 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 3700 3850 50  0001 C CNN
+F 3 "~" H 3700 3850 50  0001 C CNN
+	1    3700 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5CDBDDD2
+P 2900 3800
+F 0 "#PWR?" H 2900 3550 50  0001 C CNN
+F 1 "GND" H 2905 3627 50  0000 C CNN
+F 2 "" H 2900 3800 50  0001 C CNN
+F 3 "" H 2900 3800 50  0001 C CNN
+	1    2900 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5CDBDDD8
+P 3000 3700
+F 0 "#PWR?" H 3000 3550 50  0001 C CNN
+F 1 "+5V" H 3015 3873 50  0000 C CNN
+F 2 "" H 3000 3700 50  0001 C CNN
+F 3 "" H 3000 3700 50  0001 C CNN
+	1    3000 3700
+	1    0    0    -1  
+$EndComp
+Text GLabel 3500 3950 0    50   Input ~ 0
+SDA
+Text GLabel 3500 4050 0    50   Input ~ 0
+SCL
+Wire Wire Line
+	3500 3850 3000 3850
+Wire Wire Line
+	3000 3850 3000 3700
+Wire Wire Line
+	3500 3750 2900 3750
+Wire Wire Line
+	2900 3750 2900 3800
 $EndSCHEMATC
