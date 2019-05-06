@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:ATmega_UNI-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -1384,25 +1385,25 @@ F 3 "~" H 3700 4500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Conn_01x03_Female J62
+L Connector:Conn_01x04_Female J62
 U 1 1 5CD06D99
-P 3700 5000
-F 0 "J62" H 3727 5026 50  0000 L CNN
-F 1 "3uni" H 3727 4935 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 3700 5000 50  0001 C CNN
-F 3 "~" H 3700 5000 50  0001 C CNN
-	1    3700 5000
+P 1350 4700
+F 0 "J62" H 1377 4726 50  0000 L CNN
+F 1 "4uni" H 1377 4635 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 1350 4700 50  0001 C CNN
+F 3 "~" H 1350 4700 50  0001 C CNN
+	1    1350 4700
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Conn_01x03_Female J63
+L Connector:Conn_01x04_Female J63
 U 1 1 5CD06E9E
-P 3700 5350
-F 0 "J63" H 3727 5376 50  0000 L CNN
-F 1 "3uni" H 3727 5285 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 3700 5350 50  0001 C CNN
-F 3 "~" H 3700 5350 50  0001 C CNN
-	1    3700 5350
+P 1350 5200
+F 0 "J63" H 1377 5226 50  0000 L CNN
+F 1 "4uni" H 1377 5135 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 1350 5200 50  0001 C CNN
+F 3 "~" H 1350 5200 50  0001 C CNN
+	1    1350 5200
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1442,45 +1443,25 @@ Wire Wire Line
 $Comp
 L power:GND #PWR0130
 U 1 1 5CD19A78
-P 3400 5500
-F 0 "#PWR0130" H 3400 5250 50  0001 C CNN
-F 1 "GND" H 3405 5327 50  0000 C CNN
-F 2 "" H 3400 5500 50  0001 C CNN
-F 3 "" H 3400 5500 50  0001 C CNN
-	1    3400 5500
+P 800 5450
+F 0 "#PWR0130" H 800 5200 50  0001 C CNN
+F 1 "GND" H 805 5277 50  0000 C CNN
+F 2 "" H 800 5450 50  0001 C CNN
+F 3 "" H 800 5450 50  0001 C CNN
+	1    800  5450
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+5V #PWR0131
 U 1 1 5CD3638B
-P 3300 5000
-F 0 "#PWR0131" H 3300 4850 50  0001 C CNN
-F 1 "+5V" H 3315 5173 50  0000 C CNN
-F 2 "" H 3300 5000 50  0001 C CNN
-F 3 "" H 3300 5000 50  0001 C CNN
-	1    3300 5000
+P 900 4550
+F 0 "#PWR0131" H 900 4400 50  0001 C CNN
+F 1 "+5V" H 915 4723 50  0000 C CNN
+F 2 "" H 900 4550 50  0001 C CNN
+F 3 "" H 900 4550 50  0001 C CNN
+	1    900  4550
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3500 5100 3300 5100
-Wire Wire Line
-	3500 5450 3300 5450
-Wire Wire Line
-	3300 5450 3300 5100
-Wire Wire Line
-	3400 4900 3400 5250
-Wire Wire Line
-	3400 4900 3500 4900
-Wire Wire Line
-	3400 5250 3500 5250
-Wire Wire Line
-	3300 5100 3300 5000
-Connection ~ 3300 5100
-Connection ~ 3400 5250
-Wire Wire Line
-	3400 5250 3400 5500
-Wire Wire Line
-	3500 5000 3500 5350
 $Comp
 L Connector:Conn_01x04_Female J612
 U 1 1 5CDBDDCC
@@ -1526,4 +1507,34 @@ Wire Wire Line
 	3500 3750 2900 3750
 Wire Wire Line
 	2900 3750 2900 3800
+Wire Wire Line
+	900  4550 900  4700
+Wire Wire Line
+	900  4700 900  5200
+Connection ~ 900  4700
+Wire Wire Line
+	1000 4800 1000 5300
+Wire Wire Line
+	1150 4900 1100 4900
+Wire Wire Line
+	1100 5400 1150 5400
+Wire Wire Line
+	800  4600 1150 4600
+Wire Wire Line
+	900  4700 1150 4700
+Wire Wire Line
+	1000 4800 1150 4800
+Wire Wire Line
+	1000 5300 1150 5300
+Wire Wire Line
+	800  4600 800  5100
+Wire Wire Line
+	1100 4900 1100 5400
+Wire Wire Line
+	900  5200 1150 5200
+Wire Wire Line
+	1150 5100 800  5100
+Connection ~ 800  5100
+Wire Wire Line
+	800  5100 800  5450
 $EndSCHEMATC
