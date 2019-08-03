@@ -243,11 +243,11 @@ PDIP15
 Text GLabel 5800 2650 0    50   Input ~ 0
 PDIP16
 Text GLabel 5800 2550 0    50   Input ~ 0
-PDIP17
+MOSI
 Text GLabel 5800 2450 0    50   Input ~ 0
-PDIP18
+MISO
 Text GLabel 5800 2350 0    50   Input ~ 0
-PDIP19
+SCK
 Text GLabel 5800 2250 0    50   Input ~ 0
 PDIP20
 Text GLabel 5800 2150 0    50   Input ~ 0
@@ -275,11 +275,11 @@ PDIP15
 Text GLabel 2450 1650 2    50   Input ~ 0
 PDIP16
 Text GLabel 2450 1750 2    50   Input ~ 0
-PDIP17
+MOSI
 Text GLabel 2450 1850 2    50   Input ~ 0
-PDIP18
+MISO
 Text GLabel 2450 1950 2    50   Input ~ 0
-PDIP19
+SCK
 Text GLabel 2450 2350 2    50   Input ~ 0
 PDIP23
 Text GLabel 2450 2450 2    50   Input ~ 0
@@ -353,7 +353,7 @@ Connection ~ 2500 5650
 Wire Wire Line
 	2150 5650 2050 5650
 Text GLabel 9800 1800 1    50   Input ~ 0
-PDIP19
+SCK
 $Comp
 L Device:R R11
 U 1 1 5CC77F82
@@ -392,9 +392,9 @@ Wire Wire Line
 Wire Wire Line
 	10750 1900 10900 1900
 Text GLabel 8550 2000 2    50   Input ~ 0
-PDIP18
+MISO
 Text GLabel 8550 2100 2    50   Input ~ 0
-PDIP17
+MOSI
 Text GLabel 2450 2950 2    50   Input ~ 0
 ~RST
 Text GLabel 9550 2200 2    50   Input ~ 0
@@ -788,11 +788,11 @@ PDIP15
 Text GLabel 5800 4450 0    50   Input ~ 0
 PDIP16
 Text GLabel 5800 4350 0    50   Input ~ 0
-PDIP17
+MOSI
 Text GLabel 5800 4250 0    50   Input ~ 0
-PDIP18
+MISO
 Text GLabel 5800 4150 0    50   Input ~ 0
-PDIP19
+SCK
 Text GLabel 5800 4050 0    50   Input ~ 0
 PDIP20
 Text GLabel 5800 3950 0    50   Input ~ 0
@@ -1518,4 +1518,55 @@ Wire Wire Line
 	10000 3450 10500 3450
 Wire Wire Line
 	9700 3700 9200 3700
+$Comp
+L Connector_Generic:Conn_02x03_Odd_Even J8
+U 1 1 5D5FCB59
+P 4800 6100
+F 0 "J8" H 4850 6417 50  0000 C CNN
+F 1 "ICSP" H 4850 6326 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical" H 4800 6100 50  0001 C CNN
+F 3 "~" H 4800 6100 50  0001 C CNN
+	1    4800 6100
+	1    0    0    -1  
+$EndComp
+Text GLabel 4600 6200 0    50   Input ~ 0
+~RST
+$Comp
+L power:GND #PWR0110
+U 1 1 5D5FD341
+P 5150 6250
+F 0 "#PWR0110" H 5150 6000 50  0001 C CNN
+F 1 "GND" H 5155 6077 50  0000 C CNN
+F 2 "" H 5150 6250 50  0001 C CNN
+F 3 "" H 5150 6250 50  0001 C CNN
+	1    5150 6250
+	1    0    0    -1  
+$EndComp
+Text GLabel 4600 6000 0    50   Input ~ 0
+MISO
+Text GLabel 5100 6100 2    50   Input ~ 0
+MOSI
+$Comp
+L power:+5V #PWR0111
+U 1 1 5D5FEE32
+P 5150 5950
+F 0 "#PWR0111" H 5150 5800 50  0001 C CNN
+F 1 "+5V" H 5165 6123 50  0000 C CNN
+F 2 "" H 5150 5950 50  0001 C CNN
+F 3 "" H 5150 5950 50  0001 C CNN
+	1    5150 5950
+	1    0    0    -1  
+$EndComp
+Text GLabel 4350 6100 0    50   Input ~ 0
+SCK
+Wire Wire Line
+	4350 6100 4600 6100
+Wire Wire Line
+	5100 6000 5150 6000
+Wire Wire Line
+	5150 6000 5150 5950
+Wire Wire Line
+	5100 6200 5150 6200
+Wire Wire Line
+	5150 6200 5150 6250
 $EndSCHEMATC
