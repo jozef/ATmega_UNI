@@ -158,16 +158,14 @@ Connection ~ 6850 2300
 $Comp
 L power:GND #PWR0106
 U 1 1 5CC73029
-P 9150 1600
-F 0 "#PWR0106" H 9150 1350 50  0001 C CNN
-F 1 "GND" H 9155 1427 50  0000 C CNN
-F 2 "" H 9150 1600 50  0001 C CNN
-F 3 "" H 9150 1600 50  0001 C CNN
-	1    9150 1600
+P 8750 1550
+F 0 "#PWR0106" H 8750 1300 50  0001 C CNN
+F 1 "GND" H 8755 1377 50  0000 C CNN
+F 2 "" H 8750 1550 50  0001 C CNN
+F 3 "" H 8750 1550 50  0001 C CNN
+	1    8750 1550
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	8550 1800 9000 1800
 Text GLabel 2450 2050 2    50   Input ~ 0
 XTAL1
 Text GLabel 2450 2150 2    50   Input ~ 0
@@ -352,28 +350,28 @@ Wire Wire Line
 Connection ~ 2500 5650
 Wire Wire Line
 	2150 5650 2050 5650
-Text GLabel 9800 1800 1    50   Input ~ 0
+Text GLabel 9800 800  1    50   Input ~ 0
 SCK
 $Comp
 L Device:R R11
 U 1 1 5CC77F82
-P 10600 1900
-F 0 "R11" V 10807 1900 50  0000 C CNN
-F 1 "1k" V 10716 1900 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 10530 1900 50  0001 C CNN
-F 3 "~" H 10600 1900 50  0001 C CNN
-	1    10600 1900
+P 10600 900
+F 0 "R11" V 10807 900 50  0000 C CNN
+F 1 "1k" V 10716 900 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 10530 900 50  0001 C CNN
+F 3 "~" H 10600 900 50  0001 C CNN
+	1    10600 900 
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:LED D1
 U 1 1 5CC780AA
-P 10150 1900
-F 0 "D1" H 10142 1645 50  0000 C CNN
-F 1 "SCK" H 10142 1736 50  0000 C CNN
-F 2 "LED_THT:LED_D3.0mm" H 10150 1900 50  0001 C CNN
-F 3 "~" H 10150 1900 50  0001 C CNN
-	1    10150 1900
+P 10150 900
+F 0 "D1" H 10142 645 50  0000 C CNN
+F 1 "SCK" H 10142 736 50  0000 C CNN
+F 2 "LED_THT:LED_D3.0mm" H 10150 900 50  0001 C CNN
+F 3 "~" H 10150 900 50  0001 C CNN
+	1    10150 900 
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -388,16 +386,14 @@ F 3 "" H 10900 3850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	10300 1900 10450 1900
+	10300 900  10450 900 
 Wire Wire Line
-	10750 1900 10900 1900
-Text GLabel 8550 2000 2    50   Input ~ 0
+	10750 900  10900 900 
+Text GLabel 9800 1250 1    50   Input ~ 0
 MISO
-Text GLabel 8550 2100 2    50   Input ~ 0
+Text GLabel 9800 1700 1    50   Input ~ 0
 MOSI
 Text GLabel 2450 2950 2    50   Input ~ 0
-~RST
-Text GLabel 9550 2200 2    50   Input ~ 0
 ~RST
 Text GLabel 3350 5650 2    50   Input ~ 0
 ~RST
@@ -421,18 +417,9 @@ XTAL1
 Text GLabel 4600 2350 2    50   Input ~ 0
 XTAL2
 Wire Wire Line
-	9000 1800 9000 1500
+	9800 800  9800 900 
 Wire Wire Line
-	9000 1500 9150 1500
-Wire Wire Line
-	9150 1500 9150 1600
-Wire Wire Line
-	8550 1900 9800 1900
-Wire Wire Line
-	9800 1800 9800 1900
-Connection ~ 9800 1900
-Wire Wire Line
-	9800 1900 10000 1900
+	9800 900  10000 900 
 Wire Wire Line
 	1100 6400 1100 6550
 Wire Wire Line
@@ -639,19 +626,6 @@ Wire Wire Line
 	6700 1350 6700 1400
 Text GLabel 7350 2400 0    50   Input ~ 0
 RAW
-$Comp
-L Device:Jumper JP10
-U 1 1 5CD06F6E
-P 9250 2200
-F 0 "JP10" H 9250 2464 50  0000 C CNN
-F 1 "Jumper" H 9250 2373 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 9250 2200 50  0001 C CNN
-F 3 "~" H 9250 2200 50  0001 C CNN
-	1    9250 2200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8550 2200 8950 2200
 Text GLabel 6700 3100 0    50   Input ~ 0
 SCL
 Text GLabel 6700 2900 0    50   Input ~ 0
@@ -1180,7 +1154,7 @@ L Switch:SW_SPDT SW9
 U 1 1 5CED911A
 P 9700 4800
 F 0 "SW9" V 9654 4948 50  0000 L CNN
-F 1 "Jack←5V→TTL" V 9745 4948 50  0000 L CNN
+F 1 "RAW→5V←TTL" V 9745 4948 50  0000 L CNN
 F 2 "Button_Switch_SMD:SW_SPDT_PCM12" H 9700 4800 50  0001 C CNN
 F 3 "" H 9700 4800 50  0001 C CNN
 	1    9700 4800
@@ -1277,12 +1251,12 @@ Wire Wire Line
 $Comp
 L Device:R R121
 U 1 1 5CE30164
-P 9850 2400
-F 0 "R121" V 10057 2400 50  0000 C CNN
-F 1 "B" V 9966 2400 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 9780 2400 50  0001 C CNN
-F 3 "~" H 9850 2400 50  0001 C CNN
-	1    9850 2400
+P 9900 2400
+F 0 "R121" V 10107 2400 50  0000 C CNN
+F 1 "B" V 10016 2400 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 9830 2400 50  0001 C CNN
+F 3 "~" H 9900 2400 50  0001 C CNN
+	1    9900 2400
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -1348,8 +1322,6 @@ Wire Wire Line
 	6200 2600 7350 2600
 Wire Wire Line
 	6300 2800 7350 2800
-Wire Wire Line
-	10900 1900 10900 2550
 $Comp
 L Device:R R124
 U 1 1 5CECE027
@@ -1428,11 +1400,8 @@ Wire Wire Line
 	6900 5150 7100 5150
 Wire Wire Line
 	7100 5150 7100 4850
-Connection ~ 10900 2550
 Wire Wire Line
 	10900 2550 10900 3450
-Wire Wire Line
-	10050 2400 10000 2400
 Wire Wire Line
 	10050 2700 10050 2800
 Wire Wire Line
@@ -1481,8 +1450,6 @@ $EndComp
 Wire Wire Line
 	9650 2300 9650 2400
 Wire Wire Line
-	9650 2400 9700 2400
-Wire Wire Line
 	8550 2300 9650 2300
 Wire Wire Line
 	8550 2400 9550 2400
@@ -1521,52 +1488,185 @@ Wire Wire Line
 $Comp
 L Connector_Generic:Conn_02x03_Odd_Even J8
 U 1 1 5D5FCB59
-P 4800 6100
-F 0 "J8" H 4850 6417 50  0000 C CNN
-F 1 "ICSP" H 4850 6326 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical" H 4800 6100 50  0001 C CNN
-F 3 "~" H 4800 6100 50  0001 C CNN
-	1    4800 6100
+P 5400 6100
+F 0 "J8" H 5450 6417 50  0000 C CNN
+F 1 "ICSP" H 5450 6326 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical" H 5400 6100 50  0001 C CNN
+F 3 "~" H 5400 6100 50  0001 C CNN
+	1    5400 6100
 	1    0    0    -1  
 $EndComp
-Text GLabel 4600 6200 0    50   Input ~ 0
+Text GLabel 4200 6500 0    50   Input ~ 0
 ~RST
 $Comp
 L power:GND #PWR0110
 U 1 1 5D5FD341
-P 5150 6250
-F 0 "#PWR0110" H 5150 6000 50  0001 C CNN
-F 1 "GND" H 5155 6077 50  0000 C CNN
-F 2 "" H 5150 6250 50  0001 C CNN
-F 3 "" H 5150 6250 50  0001 C CNN
-	1    5150 6250
+P 5750 6250
+F 0 "#PWR0110" H 5750 6000 50  0001 C CNN
+F 1 "GND" H 5755 6077 50  0000 C CNN
+F 2 "" H 5750 6250 50  0001 C CNN
+F 3 "" H 5750 6250 50  0001 C CNN
+	1    5750 6250
 	1    0    0    -1  
 $EndComp
-Text GLabel 4600 6000 0    50   Input ~ 0
+Text GLabel 5200 6000 0    50   Input ~ 0
 MISO
-Text GLabel 5100 6100 2    50   Input ~ 0
+Text GLabel 5700 6100 2    50   Input ~ 0
 MOSI
 $Comp
 L power:+5V #PWR0111
 U 1 1 5D5FEE32
-P 5150 5950
-F 0 "#PWR0111" H 5150 5800 50  0001 C CNN
-F 1 "+5V" H 5165 6123 50  0000 C CNN
-F 2 "" H 5150 5950 50  0001 C CNN
-F 3 "" H 5150 5950 50  0001 C CNN
-	1    5150 5950
+P 5750 5950
+F 0 "#PWR0111" H 5750 5800 50  0001 C CNN
+F 1 "+5V" H 5765 6123 50  0000 C CNN
+F 2 "" H 5750 5950 50  0001 C CNN
+F 3 "" H 5750 5950 50  0001 C CNN
+	1    5750 5950
 	1    0    0    -1  
 $EndComp
-Text GLabel 4350 6100 0    50   Input ~ 0
+Text GLabel 4950 6100 0    50   Input ~ 0
 SCK
 Wire Wire Line
-	4350 6100 4600 6100
+	4950 6100 5200 6100
 Wire Wire Line
-	5100 6000 5150 6000
+	5700 6000 5750 6000
 Wire Wire Line
-	5150 6000 5150 5950
+	5750 6000 5750 5950
 Wire Wire Line
-	5100 6200 5150 6200
+	5700 6200 5750 6200
 Wire Wire Line
-	5150 6200 5150 6250
+	5750 6200 5750 6250
+$Comp
+L Device:Jumper JP13
+U 1 1 5D61F4E6
+P 9450 900
+F 0 "JP13" H 9450 1164 50  0000 C CNN
+F 1 "Jumper" H 9450 1073 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 9450 900 50  0001 C CNN
+F 3 "~" H 9450 900 50  0001 C CNN
+	1    9450 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Jumper JP12
+U 1 1 5D629CD8
+P 9450 1350
+F 0 "JP12" H 9450 1614 50  0000 C CNN
+F 1 "Jumper" H 9450 1523 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 9450 1350 50  0001 C CNN
+F 3 "~" H 9450 1350 50  0001 C CNN
+	1    9450 1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8550 1800 8650 1800
+Wire Wire Line
+	8650 1800 8650 1450
+Wire Wire Line
+	8650 1450 8750 1450
+Wire Wire Line
+	8750 1450 8750 1550
+Wire Wire Line
+	8550 1900 8900 1900
+Wire Wire Line
+	8900 1900 8900 900 
+Wire Wire Line
+	8900 900  9150 900 
+Wire Wire Line
+	9750 900  9800 900 
+Connection ~ 9800 900 
+Wire Wire Line
+	8550 2000 9000 2000
+Wire Wire Line
+	9000 1350 9150 1350
+$Comp
+L Device:Jumper JP11
+U 1 1 5D654252
+P 9450 1800
+F 0 "JP11" H 9450 2064 50  0000 C CNN
+F 1 "Jumper" H 9450 1973 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 9450 1800 50  0001 C CNN
+F 3 "~" H 9450 1800 50  0001 C CNN
+	1    9450 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9650 2400 9750 2400
+Wire Wire Line
+	8550 2100 9100 2100
+Wire Wire Line
+	9100 2100 9100 1800
+Wire Wire Line
+	9100 1800 9150 1800
+Wire Wire Line
+	9750 1800 9800 1800
+Wire Wire Line
+	9800 1800 9800 1700
+Wire Wire Line
+	9750 1350 9800 1350
+Wire Wire Line
+	9800 1350 9800 1250
+Wire Wire Line
+	9000 1350 9000 2000
+Wire Wire Line
+	10900 900  10900 2550
+Connection ~ 10900 2550
+Text GLabel 9300 2150 1    50   Input ~ 0
+~eRST
+Wire Wire Line
+	8550 2200 9300 2200
+Wire Wire Line
+	9300 2200 9300 2150
+Connection ~ 9300 2200
+Text GLabel 4200 6800 0    50   Input ~ 0
+~eRST
+$Comp
+L Jumper:Jumper_3_Open JP8
+U 1 1 5D6F7851
+P 4550 6500
+F 0 "JP8" V 4504 6587 50  0000 L CNN
+F 1 "SW_RST" V 4595 6587 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 4550 6500 50  0001 C CNN
+F 3 "~" H 4550 6500 50  0001 C CNN
+	1    4550 6500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4550 6200 4550 6250
+Wire Wire Line
+	4550 6200 5200 6200
+Text GLabel 4200 6200 0    50   Input ~ 0
+~iRST
+Wire Wire Line
+	4200 6200 4550 6200
+Connection ~ 4550 6200
+Wire Wire Line
+	4200 6500 4400 6500
+Wire Wire Line
+	4200 6800 4550 6800
+Wire Wire Line
+	4550 6800 4550 6750
+Text GLabel 10450 1900 1    50   Input ~ 0
+PDIP16
+$Comp
+L Device:Jumper JP10
+U 1 1 5D78981C
+P 10000 2050
+F 0 "JP10" H 10000 2314 50  0000 C CNN
+F 1 "Jumper" H 10000 2223 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 10000 2050 50  0001 C CNN
+F 3 "~" H 10000 2050 50  0001 C CNN
+	1    10000 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9600 2200 9600 2050
+Wire Wire Line
+	9600 2050 9700 2050
+Wire Wire Line
+	9300 2200 9600 2200
+Wire Wire Line
+	10300 2050 10450 2050
+Wire Wire Line
+	10450 2050 10450 1900
 $EndSCHEMATC
