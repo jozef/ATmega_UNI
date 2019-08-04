@@ -546,12 +546,12 @@ Wire Wire Line
 $Comp
 L power:+5V #PWR0115
 U 1 1 5CC97423
-P 9700 4500
-F 0 "#PWR0115" H 9700 4350 50  0001 C CNN
-F 1 "+5V" H 9715 4673 50  0000 C CNN
-F 2 "" H 9700 4500 50  0001 C CNN
-F 3 "" H 9700 4500 50  0001 C CNN
-	1    9700 4500
+P 9600 5100
+F 0 "#PWR0115" H 9600 4950 50  0001 C CNN
+F 1 "+5V" H 9615 5273 50  0000 C CNN
+F 2 "" H 9600 5100 50  0001 C CNN
+F 3 "" H 9600 5100 50  0001 C CNN
+	1    9600 5100
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -880,7 +880,7 @@ Wire Wire Line
 Wire Wire Line
 	6650 3450 6650 3400
 Connection ~ 6850 3450
-Text GLabel 9600 5000 3    50   Input ~ 0
+Text GLabel 9200 5000 3    50   Input ~ 0
 USB_5V
 Text GLabel 1700 6600 0    50   Input ~ 0
 USB_5V
@@ -1149,17 +1149,6 @@ Wire Wire Line
 	3200 5400 3200 5300
 Text GLabel 9900 5450 2    50   Input ~ 0
 Jack_5V
-$Comp
-L Switch:SW_SPDT SW9
-U 1 1 5CED911A
-P 9700 4800
-F 0 "SW9" V 9654 4948 50  0000 L CNN
-F 1 "RAW→5V←TTL" V 9745 4948 50  0000 L CNN
-F 2 "Button_Switch_SMD:SW_SPDT_PCM12" H 9700 4800 50  0001 C CNN
-F 3 "" H 9700 4800 50  0001 C CNN
-	1    9700 4800
-	0    -1   1    0   
-$EndComp
 Wire Wire Line
 	9900 5450 9800 5450
 Wire Wire Line
@@ -1184,10 +1173,6 @@ Wire Wire Line
 	9800 5150 10500 5150
 Connection ~ 10500 5150
 Connection ~ 9800 5150
-Wire Wire Line
-	9800 5150 9800 5000
-Wire Wire Line
-	9700 4500 9700 4600
 $Comp
 L Device:C_Small C54
 U 1 1 5CD992DA
@@ -1669,4 +1654,29 @@ Wire Wire Line
 	10300 2050 10450 2050
 Wire Wire Line
 	10450 2050 10450 1900
+$Comp
+L Jumper:Jumper_3_Open JP9
+U 1 1 5D7A4CD3
+P 9500 4650
+F 0 "JP9" H 9500 4874 50  0000 C CNN
+F 1 "RAW→5V←TTL" H 9500 4783 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 9500 4650 50  0001 C CNN
+F 3 "~" H 9500 4650 50  0001 C CNN
+	1    9500 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9250 4650 9200 4650
+Wire Wire Line
+	9200 4650 9200 5000
+Wire Wire Line
+	9500 4800 9500 5200
+Wire Wire Line
+	9500 5200 9600 5200
+Wire Wire Line
+	9600 5200 9600 5100
+Wire Wire Line
+	9800 4650 9750 4650
+Wire Wire Line
+	9800 4650 9800 5150
 $EndSCHEMATC
