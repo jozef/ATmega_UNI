@@ -953,14 +953,14 @@ Connection ~ 8900 5600
 Wire Wire Line
 	8900 5600 8900 5700
 $Comp
-L Connector:Conn_01x04_Female J611
+L Connector:Conn_01x05_Female J611
 U 1 1 5CD06A31
-P 3700 4500
-F 0 "J611" H 3728 4476 50  0000 L CNN
-F 1 "I2C" H 3728 4385 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 3700 4500 50  0001 C CNN
-F 3 "~" H 3700 4500 50  0001 C CNN
-	1    3700 4500
+P 3700 4600
+F 0 "J611" H 3728 4576 50  0000 L CNN
+F 1 "I2C" H 3728 4485 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x05_P2.54mm_Vertical" H 3700 4600 50  0001 C CNN
+F 3 "~" H 3700 4600 50  0001 C CNN
+	1    3700 4600
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1042,14 +1042,14 @@ F 3 "" H 900 4550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Conn_01x04_Female J612
+L Connector:Conn_01x05_Female J612
 U 1 1 5CDBDDCC
-P 3700 3850
-F 0 "J612" H 3728 3826 50  0000 L CNN
-F 1 "I2C" H 3728 3735 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 3700 3850 50  0001 C CNN
-F 3 "~" H 3700 3850 50  0001 C CNN
-	1    3700 3850
+P 3700 3950
+F 0 "J612" H 3728 3926 50  0000 L CNN
+F 1 "I2C" H 3728 3835 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x05_P2.54mm_Vertical" H 3700 3950 50  0001 C CNN
+F 3 "~" H 3700 3950 50  0001 C CNN
+	1    3700 3950
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1679,4 +1679,48 @@ Wire Wire Line
 	9800 4650 9750 4650
 Wire Wire Line
 	9800 4650 9800 5150
+$Comp
+L power:+3.3V #PWR0112
+U 1 1 5D4AB5FB
+P 3100 4750
+F 0 "#PWR0112" H 3100 4600 50  0001 C CNN
+F 1 "+3.3V" H 3115 4923 50  0000 C CNN
+F 2 "" H 3100 4750 50  0001 C CNN
+F 3 "" H 3100 4750 50  0001 C CNN
+	1    3100 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 4800 3100 4800
+Wire Wire Line
+	3100 4800 3100 4750
+$Comp
+L power:+3.3V #PWR0134
+U 1 1 5D4B9693
+P 3100 4100
+F 0 "#PWR0134" H 3100 3950 50  0001 C CNN
+F 1 "+3.3V" H 3115 4273 50  0000 C CNN
+F 2 "" H 3100 4100 50  0001 C CNN
+F 3 "" H 3100 4100 50  0001 C CNN
+	1    3100 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 4150 3100 4150
+Wire Wire Line
+	3100 4150 3100 4100
+$Comp
+L Connector:Conn_01x01_Male J13
+U 1 1 5D4C78CE
+P 7000 2000
+F 0 "J13" H 7106 2178 50  0000 C CNN
+F 1 "3.3V" H 7106 2087 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 7000 2000 50  0001 C CNN
+F 3 "~" H 7000 2000 50  0001 C CNN
+	1    7000 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7200 2000 7300 2000
+Connection ~ 7300 2000
 $EndSCHEMATC
