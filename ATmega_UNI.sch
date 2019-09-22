@@ -1133,7 +1133,7 @@ Wire Wire Line
 	7200 1400 6700 1400
 Connection ~ 6700 1400
 Wire Wire Line
-	1100 6400 2600 6400
+	1100 6400 2500 6400
 Text GLabel 1700 6500 0    50   Input ~ 0
 CTS
 Wire Wire Line
@@ -1463,4 +1463,22 @@ Wire Wire Line
 Wire Wire Line
 	9450 3500 9450 3600
 Connection ~ 9450 3600
+$Comp
+L Connector:Conn_01x01_Male J79
+U 1 1 5D87D7CA
+P 2800 6200
+F 0 "J79" H 2906 6378 50  0000 C CNN
+F 1 "GND" H 2906 6287 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 2800 6200 50  0001 C CNN
+F 3 "~" H 2800 6200 50  0001 C CNN
+	1    2800 6200
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2600 6200 2500 6200
+Wire Wire Line
+	2500 6200 2500 6400
+Connection ~ 2500 6400
+Wire Wire Line
+	2500 6400 2600 6400
 $EndSCHEMATC
