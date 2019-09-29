@@ -192,26 +192,26 @@ $EndComp
 $Comp
 L Connector:Conn_01x06_Female J7
 U 1 1 5CC74099
-P 2800 6600
-F 0 "J7" H 2828 6576 50  0000 L CNN
-F 1 "USB_to_TTL" H 2828 6485 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Horizontal" H 2800 6600 50  0001 C CNN
-F 3 "~" H 2800 6600 50  0001 C CNN
-	1    2800 6600
+P 3600 7000
+F 0 "J7" H 3628 6976 50  0000 L CNN
+F 1 "USB_to_TTL" H 3628 6885 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Horizontal" H 3600 7000 50  0001 C CNN
+F 3 "~" H 3600 7000 50  0001 C CNN
+	1    3600 7000
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR0102
 U 1 1 5CC74E7F
-P 1100 6550
-F 0 "#PWR0102" H 1100 6300 50  0001 C CNN
-F 1 "GND" H 1105 6377 50  0000 C CNN
-F 2 "" H 1100 6550 50  0001 C CNN
-F 3 "" H 1100 6550 50  0001 C CNN
-	1    1100 6550
+P 1900 6950
+F 0 "#PWR0102" H 1900 6700 50  0001 C CNN
+F 1 "GND" H 1905 6777 50  0000 C CNN
+F 2 "" H 1900 6950 50  0001 C CNN
+F 3 "" H 1900 6950 50  0001 C CNN
+	1    1900 6950
 	1    0    0    -1  
 $EndComp
-Text GLabel 1700 6900 0    50   Input ~ 0
+Text GLabel 2500 7300 0    50   Input ~ 0
 DTR
 Text GLabel 4600 1450 2    50   Input ~ 0
 ~RST
@@ -327,17 +327,6 @@ F 3 "~" H 2500 5350 50  0001 C CNN
 	1    2500 5350
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:+5V #PWR0107
-U 1 1 5CC77417
-P 2500 5100
-F 0 "#PWR0107" H 2500 4950 50  0001 C CNN
-F 1 "+5V" H 2515 5273 50  0000 C CNN
-F 2 "" H 2500 5100 50  0001 C CNN
-F 3 "" H 2500 5100 50  0001 C CNN
-	1    2500 5100
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2500 5100 2500 5200
 Wire Wire Line
@@ -394,27 +383,16 @@ Text GLabel 2450 2950 2    50   Input ~ 0
 ~RST
 Text GLabel 3350 5650 2    50   Input ~ 0
 ~RST
-$Comp
-L power:+5V #PWR0109
-U 1 1 5CC79527
-P 1850 950
-F 0 "#PWR0109" H 1850 800 50  0001 C CNN
-F 1 "+5V" H 1865 1123 50  0000 C CNN
-F 2 "" H 1850 950 50  0001 C CNN
-F 3 "" H 1850 950 50  0001 C CNN
-	1    1850 950 
-	1    0    0    -1  
-$EndComp
-Text GLabel 1700 6700 0    50   Input ~ 0
+Text GLabel 2500 7100 0    50   Input ~ 0
 RXD
-Text GLabel 1700 6800 0    50   Input ~ 0
+Text GLabel 2500 7200 0    50   Input ~ 0
 TXD
 Text GLabel 4600 2250 2    50   Input ~ 0
 XTAL1
 Text GLabel 4600 2350 2    50   Input ~ 0
 XTAL2
 Wire Wire Line
-	1100 6400 1100 6550
+	1900 6800 1900 6950
 Wire Wire Line
 	3950 2200 3950 2250
 $Comp
@@ -547,23 +525,6 @@ F 3 "" H 9600 5100 50  0001 C CNN
 	1    9600 5100
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:+5V #PWR0118
-U 1 1 5CC9D62A
-P 5000 2000
-F 0 "#PWR0118" H 5000 1850 50  0001 C CNN
-F 1 "+5V" H 5015 2173 50  0000 C CNN
-F 2 "" H 5000 2000 50  0001 C CNN
-F 3 "" H 5000 2000 50  0001 C CNN
-	1    5000 2000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4600 2050 5000 2050
-Wire Wire Line
-	5000 2050 5000 2000
-Wire Wire Line
-	1850 1150 1850 950 
 Text GLabel 8900 5550 1    50   Input ~ 0
 RAW
 Wire Wire Line
@@ -743,21 +704,6 @@ Wire Wire Line
 Connection ~ 5300 3950
 Wire Wire Line
 	5300 3950 5300 4050
-$Comp
-L power:+5V #PWR0124
-U 1 1 5CD3A5B5
-P 5000 3800
-F 0 "#PWR0124" H 5000 3650 50  0001 C CNN
-F 1 "+5V" H 5015 3973 50  0000 C CNN
-F 2 "" H 5000 3800 50  0001 C CNN
-F 3 "" H 5000 3800 50  0001 C CNN
-	1    5000 3800
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4600 3850 5000 3850
-Wire Wire Line
-	5000 3850 5000 3800
 Wire Wire Line
 	6700 2900 6850 2900
 Wire Wire Line
@@ -800,28 +746,13 @@ Wire Wire Line
 	6850 3450 7100 3450
 Wire Wire Line
 	7100 3450 7100 3400
-$Comp
-L power:+5V #PWR0125
-U 1 1 5CDD7828
-P 6650 3400
-F 0 "#PWR0125" H 6650 3250 50  0001 C CNN
-F 1 "+5V" H 6665 3573 50  0000 C CNN
-F 2 "" H 6650 3400 50  0001 C CNN
-F 3 "" H 6650 3400 50  0001 C CNN
-	1    6650 3400
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6850 3450 6650 3450
-Wire Wire Line
-	6650 3450 6650 3400
 Connection ~ 6850 3450
 Text GLabel 9200 5000 3    50   Input ~ 0
 USB_5V
-Text GLabel 1700 6600 0    50   Input ~ 0
+Text GLabel 2500 7000 0    50   Input ~ 0
 USB_5V
 Wire Wire Line
-	1700 6600 2600 6600
+	2500 7000 3400 7000
 $Comp
 L power:GND #PWR0126
 U 1 1 5CD506BB
@@ -831,17 +762,6 @@ F 1 "GND" H 6605 5677 50  0000 C CNN
 F 2 "" H 6600 5850 50  0001 C CNN
 F 3 "" H 6600 5850 50  0001 C CNN
 	1    6600 5850
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+5V #PWR0127
-U 1 1 5CD50712
-P 7400 5750
-F 0 "#PWR0127" H 7400 5600 50  0001 C CNN
-F 1 "+5V" H 7415 5923 50  0000 C CNN
-F 2 "" H 7400 5750 50  0001 C CNN
-F 3 "" H 7400 5750 50  0001 C CNN
-	1    7400 5750
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -900,25 +820,25 @@ F 3 "~" H 3700 4600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Conn_01x04_Female J62
+L Connector:Conn_01x06_Female J62
 U 1 1 5CD06D99
-P 1350 4700
-F 0 "J62" H 1377 4726 50  0000 L CNN
-F 1 "4uni" H 1377 4635 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 1350 4700 50  0001 C CNN
-F 3 "~" H 1350 4700 50  0001 C CNN
-	1    1350 4700
+P 1550 4800
+F 0 "J62" H 1577 4826 50  0000 L CNN
+F 1 "4uni" H 1577 4735 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical" H 1550 4800 50  0001 C CNN
+F 3 "~" H 1550 4800 50  0001 C CNN
+	1    1550 4800
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Conn_01x04_Female J63
+L Connector:Conn_01x06_Female J63
 U 1 1 5CD06E9E
-P 1350 5200
-F 0 "J63" H 1377 5226 50  0000 L CNN
-F 1 "4uni" H 1377 5135 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 1350 5200 50  0001 C CNN
-F 3 "~" H 1350 5200 50  0001 C CNN
-	1    1350 5200
+P 1550 5650
+F 0 "J63" H 1577 5676 50  0000 L CNN
+F 1 "4uni" H 1577 5585 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical" H 1550 5650 50  0001 C CNN
+F 3 "~" H 1550 5650 50  0001 C CNN
+	1    1550 5650
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -932,17 +852,6 @@ F 3 "" H 2900 4450 50  0001 C CNN
 	1    2900 4450
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:+5V #PWR0129
-U 1 1 5CD06FD7
-P 3000 4350
-F 0 "#PWR0129" H 3000 4200 50  0001 C CNN
-F 1 "+5V" H 3015 4523 50  0000 C CNN
-F 2 "" H 3000 4350 50  0001 C CNN
-F 3 "" H 3000 4350 50  0001 C CNN
-	1    3000 4350
-	1    0    0    -1  
-$EndComp
 Text GLabel 3500 4600 0    50   Input ~ 0
 SDA
 Text GLabel 3500 4700 0    50   Input ~ 0
@@ -950,31 +859,18 @@ SCL
 Wire Wire Line
 	3500 4500 3000 4500
 Wire Wire Line
-	3000 4500 3000 4350
-Wire Wire Line
 	3500 4400 2900 4400
 Wire Wire Line
 	2900 4400 2900 4450
 $Comp
 L power:GND #PWR0130
 U 1 1 5CD19A78
-P 800 5450
-F 0 "#PWR0130" H 800 5200 50  0001 C CNN
-F 1 "GND" H 805 5277 50  0000 C CNN
-F 2 "" H 800 5450 50  0001 C CNN
-F 3 "" H 800 5450 50  0001 C CNN
-	1    800  5450
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+5V #PWR0131
-U 1 1 5CD3638B
-P 900 4550
-F 0 "#PWR0131" H 900 4400 50  0001 C CNN
-F 1 "+5V" H 915 4723 50  0000 C CNN
-F 2 "" H 900 4550 50  0001 C CNN
-F 3 "" H 900 4550 50  0001 C CNN
-	1    900  4550
+P 700 5550
+F 0 "#PWR0130" H 700 5300 50  0001 C CNN
+F 1 "GND" H 705 5377 50  0000 C CNN
+F 2 "" H 700 5550 50  0001 C CNN
+F 3 "" H 700 5550 50  0001 C CNN
+	1    700  5550
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -999,17 +895,6 @@ F 3 "" H 2900 3800 50  0001 C CNN
 	1    2900 3800
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:+5V #PWR0133
-U 1 1 5CDBDDD8
-P 3000 3700
-F 0 "#PWR0133" H 3000 3550 50  0001 C CNN
-F 1 "+5V" H 3015 3873 50  0000 C CNN
-F 2 "" H 3000 3700 50  0001 C CNN
-F 3 "" H 3000 3700 50  0001 C CNN
-	1    3000 3700
-	1    0    0    -1  
-$EndComp
 Text GLabel 3500 3950 0    50   Input ~ 0
 SDA
 Text GLabel 3500 4050 0    50   Input ~ 0
@@ -1022,36 +907,6 @@ Wire Wire Line
 	3500 3750 2900 3750
 Wire Wire Line
 	2900 3750 2900 3800
-Wire Wire Line
-	900  4550 900  4700
-Wire Wire Line
-	900  4700 900  5200
-Connection ~ 900  4700
-Wire Wire Line
-	1000 4800 1000 5300
-Wire Wire Line
-	1150 4900 1100 4900
-Wire Wire Line
-	1100 5400 1150 5400
-Wire Wire Line
-	800  4600 1150 4600
-Wire Wire Line
-	900  4700 1150 4700
-Wire Wire Line
-	1000 4800 1150 4800
-Wire Wire Line
-	1000 5300 1150 5300
-Wire Wire Line
-	800  4600 800  5100
-Wire Wire Line
-	1100 4900 1100 5400
-Wire Wire Line
-	900  5200 1150 5200
-Wire Wire Line
-	1150 5100 800  5100
-Connection ~ 800  5100
-Wire Wire Line
-	800  5100 800  5450
 $Comp
 L Switch:SW_Push SW1
 U 1 1 5CE97F92
@@ -1133,17 +988,17 @@ Wire Wire Line
 	7200 1400 6700 1400
 Connection ~ 6700 1400
 Wire Wire Line
-	1100 6400 2500 6400
-Text GLabel 1700 6500 0    50   Input ~ 0
+	1900 6800 3300 6800
+Text GLabel 2500 6900 0    50   Input ~ 0
 CTS
 Wire Wire Line
-	1700 6800 2600 6800
+	2500 7200 3400 7200
 Wire Wire Line
-	1700 6700 2600 6700
+	2500 7100 3400 7100
 Wire Wire Line
-	1700 6900 2600 6900
+	2500 7300 3400 7300
 Wire Wire Line
-	1700 6500 2600 6500
+	2500 6900 3400 6900
 $Comp
 L Connector:Conn_01x04_Male Je94
 U 1 1 5D47B8F5
@@ -1183,17 +1038,6 @@ Text GLabel 5200 6000 0    50   Input ~ 0
 MISO
 Text GLabel 5700 6100 2    50   Input ~ 0
 MOSI
-$Comp
-L power:+5V #PWR0111
-U 1 1 5D5FEE32
-P 5750 5950
-F 0 "#PWR0111" H 5750 5800 50  0001 C CNN
-F 1 "+5V" H 5765 6123 50  0000 C CNN
-F 2 "" H 5750 5950 50  0001 C CNN
-F 3 "" H 5750 5950 50  0001 C CNN
-	1    5750 5950
-	1    0    0    -1  
-$EndComp
 Text GLabel 4950 6100 0    50   Input ~ 0
 SCK
 Wire Wire Line
@@ -1466,19 +1310,208 @@ Connection ~ 9450 3600
 $Comp
 L Connector:Conn_01x01_Male J79
 U 1 1 5D87D7CA
-P 2800 6200
-F 0 "J79" H 2906 6378 50  0000 C CNN
-F 1 "GND" H 2906 6287 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 2800 6200 50  0001 C CNN
-F 3 "~" H 2800 6200 50  0001 C CNN
-	1    2800 6200
+P 3600 6600
+F 0 "J79" H 3706 6778 50  0000 C CNN
+F 1 "GND" H 3706 6687 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 3600 6600 50  0001 C CNN
+F 3 "~" H 3600 6600 50  0001 C CNN
+	1    3600 6600
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	2600 6200 2500 6200
+	3400 6600 3300 6600
 Wire Wire Line
-	2500 6200 2500 6400
-Connection ~ 2500 6400
+	3300 6600 3300 6800
+Connection ~ 3300 6800
 Wire Wire Line
-	2500 6400 2600 6400
+	3300 6800 3400 6800
+$Comp
+L Device:Fuse_Small F1
+U 1 1 5D91E1A3
+P 7000 4250
+F 0 "F1" H 7000 4435 50  0000 C CNN
+F 1 "MF-R010 <200mA" H 7000 4344 50  0000 C CNN
+F 2 "Fuse:Fuse_Bourns_MF-RHT100" H 7000 4250 50  0001 C CNN
+F 3 "~" H 7000 4250 50  0001 C CNN
+	1    7000 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jumper:Jumper_2_Open JP10
+U 1 1 5D91E45F
+P 7000 4400
+F 0 "JP10" H 7000 4200 50  0000 C CNN
+F 1 "no_A_limit" H 7000 4300 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical_no_lines" H 7000 4400 50  0001 C CNN
+F 3 "~" H 7000 4400 50  0001 C CNN
+	1    7000 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0135
+U 1 1 5D91E7B1
+P 6600 4200
+F 0 "#PWR0135" H 6600 4050 50  0001 C CNN
+F 1 "+5V" H 6615 4373 50  0000 C CNN
+F 2 "" H 6600 4200 50  0001 C CNN
+F 3 "" H 6600 4200 50  0001 C CNN
+	1    6600 4200
+	1    0    0    -1  
+$EndComp
+Text GLabel 7450 4200 1    50   Input ~ 0
++5V_lim
+Wire Wire Line
+	6600 4200 6600 4250
+Wire Wire Line
+	6600 4250 6750 4250
+Wire Wire Line
+	7100 4250 7250 4250
+Wire Wire Line
+	7450 4250 7450 4200
+Wire Wire Line
+	7200 4400 7250 4400
+Wire Wire Line
+	7250 4400 7250 4250
+Connection ~ 7250 4250
+Wire Wire Line
+	7250 4250 7450 4250
+Wire Wire Line
+	6800 4400 6750 4400
+Wire Wire Line
+	6750 4400 6750 4250
+Connection ~ 6750 4250
+Wire Wire Line
+	6750 4250 6900 4250
+Text GLabel 4600 2050 2    50   Input ~ 0
++5V_lim
+Text GLabel 4600 3850 2    50   Input ~ 0
++5V_lim
+Text GLabel 1850 1150 1    50   Input ~ 0
++5V_lim
+Text GLabel 2500 5100 1    50   Input ~ 0
+USB_5V
+Wire Wire Line
+	3000 3850 3000 4500
+Connection ~ 3000 3850
+Text GLabel 5750 5950 1    50   Input ~ 0
++5V_lim
+Text GLabel 6400 3300 1    50   Input ~ 0
++5V_lim
+Wire Wire Line
+	6400 3450 6400 3300
+Wire Wire Line
+	6400 3450 6850 3450
+Wire Wire Line
+	1350 5100 1250 5100
+Wire Wire Line
+	1250 5100 1250 5950
+Wire Wire Line
+	1250 5950 1350 5950
+Wire Wire Line
+	1350 5000 1150 5000
+Wire Wire Line
+	1150 5000 1150 5850
+Wire Wire Line
+	1150 5850 1350 5850
+Wire Wire Line
+	1050 5750 1350 5750
+Wire Wire Line
+	1050 4900 1050 5750
+Wire Wire Line
+	950  5650 1350 5650
+Wire Wire Line
+	950  4800 950  5650
+Wire Wire Line
+	850  5550 1350 5550
+Wire Wire Line
+	850  4700 850  5550
+Wire Wire Line
+	1350 5450 700  5450
+Wire Wire Line
+	700  5450 700  5550
+Wire Wire Line
+	1350 4600 700  4600
+Wire Wire Line
+	700  4600 700  4500
+Wire Wire Line
+	850  4700 1350 4700
+Wire Wire Line
+	950  4800 1350 4800
+Wire Wire Line
+	1050 4900 1350 4900
+$Comp
+L Connector:Conn_01x06_Female J64
+U 1 1 5D9D2441
+P 1550 6500
+F 0 "J64" H 1577 6526 50  0000 L CNN
+F 1 "4uni" H 1577 6435 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical" H 1550 6500 50  0001 C CNN
+F 3 "~" H 1550 6500 50  0001 C CNN
+	1    1550 6500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1350 6300 700  6300
+Wire Wire Line
+	700  6300 700  6250
+Wire Wire Line
+	1350 6400 850  6400
+Wire Wire Line
+	850  6400 850  5550
+Connection ~ 850  5550
+Wire Wire Line
+	1350 6500 950  6500
+Wire Wire Line
+	950  6500 950  5650
+Connection ~ 950  5650
+Wire Wire Line
+	1350 6600 1050 6600
+Wire Wire Line
+	1050 6600 1050 5750
+Connection ~ 1050 5750
+Wire Wire Line
+	1350 6700 1150 6700
+Wire Wire Line
+	1150 6700 1150 5850
+Connection ~ 1150 5850
+Wire Wire Line
+	1350 6800 1250 6800
+Wire Wire Line
+	1250 6800 1250 5950
+Connection ~ 1250 5950
+$Comp
+L power:+3.3V #PWR0107
+U 1 1 5DA12D24
+P 700 4500
+F 0 "#PWR0107" H 700 4350 50  0001 C CNN
+F 1 "+3.3V" H 715 4673 50  0000 C CNN
+F 2 "" H 700 4500 50  0001 C CNN
+F 3 "" H 700 4500 50  0001 C CNN
+	1    700  4500
+	1    0    0    -1  
+$EndComp
+Text GLabel 7400 5750 1    50   Input ~ 0
++5V_lim
+$Comp
+L power:+5V #PWR0109
+U 1 1 5DA15379
+P 3000 3700
+F 0 "#PWR0109" H 3000 3550 50  0001 C CNN
+F 1 "+5V" H 3015 3873 50  0000 C CNN
+F 2 "" H 3000 3700 50  0001 C CNN
+F 3 "" H 3000 3700 50  0001 C CNN
+	1    3000 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5DA15AB8
+P 700 6250
+F 0 "#PWR?" H 700 6100 50  0001 C CNN
+F 1 "+5V" H 715 6423 50  0000 C CNN
+F 2 "" H 700 6250 50  0001 C CNN
+F 3 "" H 700 6250 50  0001 C CNN
+	1    700  6250
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
