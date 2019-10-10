@@ -1037,34 +1037,34 @@ PDIP26
 $Comp
 L power:GND #PWR0121
 U 1 1 5D870587
-P 8650 4350
-F 0 "#PWR0121" H 8650 4100 50  0001 C CNN
-F 1 "GND" H 8655 4177 50  0000 C CNN
-F 2 "" H 8650 4350 50  0001 C CNN
-F 3 "" H 8650 4350 50  0001 C CNN
-	1    8650 4350
+P 7750 4250
+F 0 "#PWR0121" H 7750 4000 50  0001 C CNN
+F 1 "GND" H 7755 4077 50  0000 C CNN
+F 2 "" H 7750 4250 50  0001 C CNN
+F 3 "" H 7750 4250 50  0001 C CNN
+	1    7750 4250
 	1    0    0    -1  
 $EndComp
 $Comp
 L Connector:Conn_01x02_Male J99
 U 1 1 5D878417
-P 8950 4150
-F 0 "J99" H 8923 4030 50  0000 R CNN
-F 1 "extra_gnd" H 8923 4121 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 8950 4150 50  0001 C CNN
-F 3 "~" H 8950 4150 50  0001 C CNN
-	1    8950 4150
+P 8050 4050
+F 0 "J99" H 8023 3930 50  0000 R CNN
+F 1 "extra_gnd" H 8023 4021 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 8050 4050 50  0001 C CNN
+F 3 "~" H 8050 4050 50  0001 C CNN
+	1    8050 4050
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	8750 4150 8650 4150
+	7850 4050 7750 4050
 Wire Wire Line
-	8650 4150 8650 4350
+	7750 4050 7750 4250
 Wire Wire Line
-	8750 4050 8650 4050
+	7850 3950 7750 3950
 Wire Wire Line
-	8650 4050 8650 4150
-Connection ~ 8650 4150
+	7750 3950 7750 4050
+Connection ~ 7750 4050
 $Comp
 L Connector:Conn_01x01_Male J79
 U 1 1 5D87D7CA
@@ -1376,17 +1376,138 @@ Wire Wire Line
 $Comp
 L Connector:Conn_01x01_Male J98
 U 1 1 5DB19EEC
-P 8950 3800
-F 0 "J98" H 8923 3680 50  0000 R CNN
-F 1 "extra_gnd" H 8923 3771 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical_no_lines" H 8950 3800 50  0001 C CNN
-F 3 "~" H 8950 3800 50  0001 C CNN
-	1    8950 3800
+P 8050 3700
+F 0 "J98" H 8023 3580 50  0000 R CNN
+F 1 "extra_gnd" H 8023 3671 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical_no_lines" H 8050 3700 50  0001 C CNN
+F 3 "~" H 8050 3700 50  0001 C CNN
+	1    8050 3700
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	8650 4050 8650 3800
+	7750 3950 7750 3700
 Wire Wire Line
-	8650 3800 8750 3800
-Connection ~ 8650 4050
+	7750 3700 7850 3700
+Connection ~ 7750 3950
+$Comp
+L Connector:Conn_01x04_Male J96
+U 1 1 5DA01DBB
+P 9450 4300
+F 0 "J96" H 9250 4300 50  0000 L CNN
+F 1 "Power" H 9200 4200 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical_no_lines" H 9450 4300 50  0001 C CNN
+F 3 "~" H 9450 4300 50  0001 C CNN
+	1    9450 4300
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	10250 4100 9650 4100
+Connection ~ 10250 4100
+Wire Wire Line
+	10050 4200 9650 4200
+Connection ~ 10050 4200
+Wire Wire Line
+	9800 4300 9650 4300
+Connection ~ 9800 4300
+Wire Wire Line
+	10200 4400 9650 4400
+Connection ~ 10200 4400
+$Comp
+L Connector:Conn_01x04_Male J65
+U 1 1 5DA58709
+P 8300 4800
+F 0 "J65" H 8100 4800 50  0000 L CNN
+F 1 "4uni" H 8050 4700 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical_no_lines" H 8300 4800 50  0001 C CNN
+F 3 "~" H 8300 4800 50  0001 C CNN
+	1    8300 4800
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x04_Male J66
+U 1 1 5DA6A545
+P 8300 5300
+F 0 "J66" H 8100 5300 50  0000 L CNN
+F 1 "4uni" H 8050 5200 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical_no_lines" H 8300 5300 50  0001 C CNN
+F 3 "~" H 8300 5300 50  0001 C CNN
+	1    8300 5300
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x04_Male J67
+U 1 1 5DA6A5BF
+P 8300 5800
+F 0 "J67" H 8100 5800 50  0000 L CNN
+F 1 "4uni" H 8050 5700 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical_no_lines" H 8300 5800 50  0001 C CNN
+F 3 "~" H 8300 5800 50  0001 C CNN
+	1    8300 5800
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x02_Male J68
+U 1 1 5DA6A957
+P 8300 6250
+F 0 "J68" H 8100 6250 50  0000 L CNN
+F 1 "2uni" H 8050 6150 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical_no_lines" H 8300 6250 50  0001 C CNN
+F 3 "~" H 8300 6250 50  0001 C CNN
+	1    8300 6250
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	8100 4700 8000 4700
+Wire Wire Line
+	8000 4700 8000 5200
+Wire Wire Line
+	8000 6250 8100 6250
+Wire Wire Line
+	8100 5700 8000 5700
+Connection ~ 8000 5700
+Wire Wire Line
+	8000 5700 8000 6250
+Wire Wire Line
+	8100 5200 8000 5200
+Connection ~ 8000 5200
+Wire Wire Line
+	8000 5200 8000 5700
+Wire Wire Line
+	8100 4800 7900 4800
+Wire Wire Line
+	7900 4800 7900 5300
+Wire Wire Line
+	7900 6350 8100 6350
+Wire Wire Line
+	8100 5300 7900 5300
+Connection ~ 7900 5300
+Wire Wire Line
+	7900 5300 7900 5800
+Wire Wire Line
+	8100 5800 7900 5800
+Connection ~ 7900 5800
+Wire Wire Line
+	7900 5800 7900 6350
+Wire Wire Line
+	8100 4900 7800 4900
+Wire Wire Line
+	7800 4900 7800 5400
+Wire Wire Line
+	7800 5900 8100 5900
+Wire Wire Line
+	8100 5400 7800 5400
+Connection ~ 7800 5400
+Wire Wire Line
+	7800 5400 7800 5900
+Wire Wire Line
+	8100 5000 7700 5000
+Wire Wire Line
+	7700 5000 7700 5500
+Wire Wire Line
+	7700 6000 8100 6000
+Wire Wire Line
+	8100 5500 7700 5500
+Connection ~ 7700 5500
+Wire Wire Line
+	7700 5500 7700 6000
 $EndSCHEMATC
