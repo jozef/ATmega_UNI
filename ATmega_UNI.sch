@@ -309,8 +309,8 @@ $Comp
 L Device:C_Small C2
 U 1 1 5CC7715F
 P 2250 5650
-F 0 "C2" V 2021 5650 50  0000 C CNN
-F 1 "100nF" V 2112 5650 50  0000 C CNN
+F 0 "C2" V 2400 5650 50  0000 C CNN
+F 1 "100nF" V 2500 5650 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 2250 5650 50  0001 C CNN
 F 3 "~" H 2250 5650 50  0001 C CNN
 	1    2250 5650
@@ -328,14 +328,12 @@ F 3 "~" H 2500 5350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2500 5100 2500 5200
-Wire Wire Line
 	2500 5500 2500 5650
 Wire Wire Line
 	2500 5650 2350 5650
 Connection ~ 2500 5650
 Wire Wire Line
-	2150 5650 2050 5650
+	2150 5650 2100 5650
 Text GLabel 10050 1900 2    50   Input ~ 0
 SCK
 $Comp
@@ -1128,8 +1126,6 @@ Text GLabel 4600 3850 2    50   Input ~ 0
 +5V_lim
 Text GLabel 1850 1150 1    50   Input ~ 0
 +5V_lim
-Text GLabel 2500 5100 1    50   Input ~ 0
-USB_5V
 Wire Wire Line
 	3000 3850 3000 4500
 Connection ~ 3000 3850
@@ -1678,4 +1674,75 @@ Wire Wire Line
 Connection ~ 10450 1300
 Wire Wire Line
 	10450 1300 10500 1300
+$Comp
+L Connector:Conn_01x02_Female J613
+U 1 1 5DBCD640
+P 3700 5050
+F 0 "J613" H 3728 5026 50  0000 L CNN
+F 1 "I2C" H 3728 4935 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Horizontal" H 3700 5050 50  0001 C CNN
+F 3 "~" H 3700 5050 50  0001 C CNN
+	1    3700 5050
+	1    0    0    -1  
+$EndComp
+Text GLabel 3500 5050 0    50   Input ~ 0
+SDA
+Text GLabel 3500 5150 0    50   Input ~ 0
+SCL
+$Comp
+L power:+5V #PWR0120
+U 1 1 5DBCE356
+P 2500 4950
+F 0 "#PWR0120" H 2500 4800 50  0001 C CNN
+F 1 "+5V" H 2515 5123 50  0000 C CNN
+F 2 "" H 2500 4950 50  0001 C CNN
+F 3 "" H 2500 4950 50  0001 C CNN
+	1    2500 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R22
+U 1 1 5DBCEADD
+P 2400 5350
+F 0 "R22" V 2607 5350 50  0000 C CNN
+F 1 "10k THT" V 2516 5350 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P3.81mm_Vertical" V 2330 5350 50  0001 C CNN
+F 3 "~" H 2400 5350 50  0001 C CNN
+	1    2400 5350
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2400 5500 2500 5500
+Connection ~ 2500 5500
+Wire Wire Line
+	2400 5200 2500 5200
+Connection ~ 2500 5200
+$Comp
+L Device:C_Small C22
+U 1 1 5DC078CD
+P 2250 6050
+F 0 "C22" V 2021 6050 50  0000 C CNN
+F 1 "100nF" V 2112 6050 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm" H 2250 6050 50  0001 C CNN
+F 3 "~" H 2250 6050 50  0001 C CNN
+	1    2250 6050
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2350 6050 2500 6050
+Wire Wire Line
+	2500 6050 2500 5650
+Wire Wire Line
+	2150 6050 2100 6050
+Wire Wire Line
+	2100 6050 2100 5650
+Connection ~ 2100 5650
+Wire Wire Line
+	2100 5650 2050 5650
+Text Notes 2550 5950 1    50   ~ 0
+OR\n←→
+Text Notes 2500 5150 2    50   ~ 0
+OR\n←→
+Wire Wire Line
+	2500 4950 2500 5200
 $EndSCHEMATC
