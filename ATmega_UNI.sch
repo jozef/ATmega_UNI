@@ -1411,12 +1411,12 @@ F 3 "~" H 8300 5300 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Connector:Conn_01x04_Male J67
+L Connector:Conn_01x03_Male J67
 U 1 1 5DA6A5BF
 P 8300 5800
 F 0 "J67" H 8100 5800 50  0000 L CNN
 F 1 "4uni" H 8050 5700 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical_no_lines" H 8300 5800 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical_no_lines" H 8300 5800 50  0001 C CNN
 F 3 "~" H 8300 5800 50  0001 C CNN
 	1    8300 5800
 	-1   0    0    -1  
@@ -1480,12 +1480,7 @@ Wire Wire Line
 Wire Wire Line
 	7700 5000 7700 5500
 Wire Wire Line
-	7700 6000 8100 6000
-Wire Wire Line
 	8100 5500 7700 5500
-Connection ~ 7700 5500
-Wire Wire Line
-	7700 5500 7700 6000
 Wire Wire Line
 	6700 2900 6850 2900
 Wire Wire Line
@@ -1745,4 +1740,41 @@ Text Notes 2500 5150 2    50   ~ 0
 OR\n←→
 Wire Wire Line
 	2500 4950 2500 5200
+$Comp
+L Connector:Barrel_Jack_MountingPin J97
+U 1 1 5DC45BE7
+P 10600 4950
+F 0 "J97" H 10600 5250 50  0000 R CNN
+F 1 "Barrel_Jack_Switch" H 10850 5350 50  0000 R CNN
+F 2 "Connector_BarrelJack:BarrelJack_Wuerth_6941xx301002_no_lines" H 10650 4910 50  0001 C CNN
+F 3 "~" H 10650 4910 50  0001 C CNN
+	1    10600 4950
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	10300 5050 10200 5050
+Wire Wire Line
+	10200 5050 10200 5300
+Wire Wire Line
+	10600 5250 10600 5300
+Wire Wire Line
+	10600 5300 10200 5300
+Connection ~ 10200 5300
+Text GLabel 10150 4850 0    50   Input ~ 0
+RAW
+Wire Wire Line
+	10300 4850 10150 4850
+$Comp
+L power:GND #PWR0122
+U 1 1 5DCB2A6C
+P 10200 5400
+F 0 "#PWR0122" H 10200 5150 50  0001 C CNN
+F 1 "GND" H 10205 5227 50  0000 C CNN
+F 2 "" H 10200 5400 50  0001 C CNN
+F 3 "" H 10200 5400 50  0001 C CNN
+	1    10200 5400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10200 5300 10200 5400
 $EndSCHEMATC
