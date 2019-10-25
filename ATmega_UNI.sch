@@ -1131,8 +1131,6 @@ Wire Wire Line
 Connection ~ 3000 3850
 Text GLabel 5750 5950 1    50   Input ~ 0
 +5V_lim
-Text GLabel 6400 3300 1    50   Input ~ 0
-+5V_lim
 Wire Wire Line
 	6400 3900 6600 3900
 Wire Wire Line
@@ -1495,8 +1493,6 @@ Wire Wire Line
 Connection ~ 6850 2900
 Wire Wire Line
 	6850 2900 7300 2900
-Wire Wire Line
-	6400 3300 6400 3900
 $Comp
 L Device:R_Small R12
 U 1 1 5DAECE41
@@ -1777,4 +1773,17 @@ F 3 "" H 10200 5400 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	10200 5300 10200 5400
+$Comp
+L power:+5V #PWR?
+U 1 1 5DB45A76
+P 6400 3500
+F 0 "#PWR?" H 6400 3350 50  0001 C CNN
+F 1 "+5V" H 6415 3673 50  0000 C CNN
+F 2 "" H 6400 3500 50  0001 C CNN
+F 3 "" H 6400 3500 50  0001 C CNN
+	1    6400 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6400 3900 6400 3500
 $EndSCHEMATC
