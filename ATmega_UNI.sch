@@ -112,12 +112,12 @@ $EndComp
 $Comp
 L power:GND #PWR0103
 U 1 1 5CC72B33
-P 1850 4450
-F 0 "#PWR0103" H 1850 4200 50  0001 C CNN
-F 1 "GND" H 1855 4277 50  0000 C CNN
-F 2 "" H 1850 4450 50  0001 C CNN
-F 3 "" H 1850 4450 50  0001 C CNN
-	1    1850 4450
+P 5050 5200
+F 0 "#PWR0103" H 5050 4950 50  0001 C CNN
+F 1 "GND" H 5055 5027 50  0000 C CNN
+F 2 "" H 5050 5200 50  0001 C CNN
+F 3 "" H 5050 5200 50  0001 C CNN
+	1    5050 5200
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -393,26 +393,6 @@ Wire Wire Line
 	1900 6800 1900 6950
 Wire Wire Line
 	3950 2200 3950 2250
-$Comp
-L power:GND #PWR0114
-U 1 1 5CC8AC4B
-P 5300 2250
-F 0 "#PWR0114" H 5300 2000 50  0001 C CNN
-F 1 "GND" H 5305 2077 50  0000 C CNN
-F 2 "" H 5300 2250 50  0001 C CNN
-F 3 "" H 5300 2250 50  0001 C CNN
-	1    5300 2250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5800 2050 5300 2050
-Wire Wire Line
-	5300 2050 5300 2150
-Wire Wire Line
-	4600 2150 5300 2150
-Connection ~ 5300 2150
-Wire Wire Line
-	5300 2150 5300 2250
 Wire Wire Line
 	1850 4150 1850 4450
 $Comp
@@ -519,26 +499,6 @@ XTAL1
 Text GLabel 4600 4150 2    50   Input ~ 0
 XTAL2
 $Comp
-L power:GND #PWR0123
-U 1 1 5CD3A5AA
-P 5300 4050
-F 0 "#PWR0123" H 5300 3800 50  0001 C CNN
-F 1 "GND" H 5305 3877 50  0000 C CNN
-F 2 "" H 5300 4050 50  0001 C CNN
-F 3 "" H 5300 4050 50  0001 C CNN
-	1    5300 4050
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5800 3850 5300 3850
-Wire Wire Line
-	5300 3850 5300 3950
-Wire Wire Line
-	4600 3950 5300 3950
-Connection ~ 5300 3950
-Wire Wire Line
-	5300 3950 5300 4050
-$Comp
 L Device:R_Small R3
 U 1 1 5CDB862A
 P 7100 3750
@@ -608,8 +568,6 @@ F 3 "~" H 6850 5800 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	7300 5800 7400 5800
-Wire Wire Line
-	7400 5800 7400 5750
 Wire Wire Line
 	6700 5800 6600 5800
 $Comp
@@ -1066,71 +1024,49 @@ Wire Wire Line
 $Comp
 L Device:Fuse_Small F1
 U 1 1 5D91E1A3
-P 6950 5000
-F 0 "F1" H 6950 5185 50  0000 C CNN
-F 1 "MF-R010 <200mA" H 6950 5094 50  0000 C CNN
-F 2 "Fuse:Fuse_Bourns_MF-RHT100" H 6950 5000 50  0001 C CNN
-F 3 "~" H 6950 5000 50  0001 C CNN
-	1    6950 5000
+P 7050 4750
+F 0 "F1" H 7050 4935 50  0000 C CNN
+F 1 "MF-R010 <200mA" H 7050 4844 50  0000 C CNN
+F 2 "Fuse:Fuse_Bourns_MF-RHT100" H 7050 4750 50  0001 C CNN
+F 3 "~" H 7050 4750 50  0001 C CNN
+	1    7050 4750
 	1    0    0    -1  
 $EndComp
 $Comp
-L Jumper:Jumper_2_Open JP10
+L Jumper:Jumper_3_Open JP10
 U 1 1 5D91E45F
-P 6950 5150
-F 0 "JP10" H 6950 4950 50  0000 C CNN
-F 1 "no_A_limit" H 6950 5050 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical_no_lines" H 6950 5150 50  0001 C CNN
-F 3 "~" H 6950 5150 50  0001 C CNN
-	1    6950 5150
+P 7050 5050
+F 0 "JP10" H 7050 5250 50  0000 C CNN
+F 1 "no_A_limit" H 7050 5150 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical_closed" H 7050 5050 50  0001 C CNN
+F 3 "~" H 7050 5050 50  0001 C CNN
+	1    7050 5050
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+5V #PWR0135
 U 1 1 5D91E7B1
-P 6550 4950
-F 0 "#PWR0135" H 6550 4800 50  0001 C CNN
-F 1 "+5V" H 6565 5123 50  0000 C CNN
-F 2 "" H 6550 4950 50  0001 C CNN
-F 3 "" H 6550 4950 50  0001 C CNN
-	1    6550 4950
-	1    0    0    -1  
+P 7500 4900
+F 0 "#PWR0135" H 7500 4750 50  0001 C CNN
+F 1 "+5V" H 7515 5073 50  0000 C CNN
+F 2 "" H 7500 4900 50  0001 C CNN
+F 3 "" H 7500 4900 50  0001 C CNN
+	1    7500 4900
+	0    1    1    0   
 $EndComp
-Text GLabel 7400 4950 1    50   Input ~ 0
+Text GLabel 6600 4900 0    50   Input ~ 0
 +5V_lim
-Wire Wire Line
-	6550 4950 6550 5000
-Wire Wire Line
-	6550 5000 6700 5000
-Wire Wire Line
-	7050 5000 7200 5000
-Wire Wire Line
-	7400 5000 7400 4950
-Wire Wire Line
-	7150 5150 7200 5150
-Wire Wire Line
-	7200 5150 7200 5000
-Connection ~ 7200 5000
-Wire Wire Line
-	7200 5000 7400 5000
-Wire Wire Line
-	6750 5150 6700 5150
-Wire Wire Line
-	6700 5150 6700 5000
-Connection ~ 6700 5000
-Wire Wire Line
-	6700 5000 6850 5000
 Text GLabel 4600 2050 2    50   Input ~ 0
-+5V_lim
++5V_jmp
 Text GLabel 4600 3850 2    50   Input ~ 0
-+5V_lim
++5V_jmp
 Text GLabel 1850 1150 1    50   Input ~ 0
-+5V_lim
++5V_jmp
 Wire Wire Line
 	3000 3850 3000 4500
 Connection ~ 3000 3850
 Text GLabel 5750 5950 1    50   Input ~ 0
-+5V_lim
++5V_jmp
 Wire Wire Line
 	6400 3900 6600 3900
 Wire Wire Line
@@ -1222,8 +1158,6 @@ F 3 "" H 700 4500 50  0001 C CNN
 	1    700  4500
 	1    0    0    -1  
 $EndComp
-Text GLabel 7400 5750 1    50   Input ~ 0
-+5V_lim
 $Comp
 L power:+5V #PWR0109
 U 1 1 5DA15379
@@ -1774,10 +1708,10 @@ $EndComp
 Wire Wire Line
 	10200 5300 10200 5400
 $Comp
-L power:+5V #PWR?
+L power:+5V #PWR0124
 U 1 1 5DB45A76
 P 6400 3500
-F 0 "#PWR?" H 6400 3350 50  0001 C CNN
+F 0 "#PWR0124" H 6400 3350 50  0001 C CNN
 F 1 "+5V" H 6415 3673 50  0000 C CNN
 F 2 "" H 6400 3500 50  0001 C CNN
 F 3 "" H 6400 3500 50  0001 C CNN
@@ -1786,4 +1720,68 @@ F 3 "" H 6400 3500 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6400 3900 6400 3500
+Wire Wire Line
+	6700 4750 6700 4900
+Text GLabel 7000 5250 0    50   Input ~ 0
++5V_jmp
+Wire Wire Line
+	7000 5250 7050 5250
+Wire Wire Line
+	7050 5250 7050 5200
+Wire Wire Line
+	6700 5050 6800 5050
+Wire Wire Line
+	7300 5050 7400 5050
+Wire Wire Line
+	7400 5250 7050 5250
+Wire Wire Line
+	7400 5250 7400 5800
+Connection ~ 7050 5250
+Wire Wire Line
+	7400 4750 7400 4900
+Wire Wire Line
+	7400 4900 7500 4900
+Connection ~ 7400 4900
+Wire Wire Line
+	7400 4900 7400 5050
+Wire Wire Line
+	6700 4900 6600 4900
+Connection ~ 6700 4900
+Wire Wire Line
+	6700 4900 6700 5050
+Wire Wire Line
+	7150 4750 7400 4750
+Wire Wire Line
+	6700 4750 6950 4750
+Text GLabel 5800 3850 0    50   Input ~ 0
+X2GND
+Text GLabel 5800 2050 0    50   Input ~ 0
+X2GND
+$Comp
+L Jumper:Jumper_2_Open JP11
+U 1 1 5DC5BDD3
+P 4750 5100
+F 0 "JP11" H 4750 5324 50  0000 C CNN
+F 1 "A-GND" H 4750 5233 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical_closed" H 4750 5100 50  0001 C CNN
+F 3 "~" H 4750 5100 50  0001 C CNN
+	1    4750 5100
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5050 5200 5050 5100
+Wire Wire Line
+	5050 5100 4950 5100
+Text GLabel 4600 3950 2    50   Input ~ 0
+X1GND
+Text GLabel 4600 2150 2    50   Input ~ 0
+X1GND
+Text GLabel 1850 4450 3    50   Input ~ 0
+X1GND
+Text GLabel 4450 5200 3    50   Input ~ 0
+X1GND
+Wire Wire Line
+	4550 5100 4450 5100
+Wire Wire Line
+	4450 5100 4450 5200
 $EndSCHEMATC
