@@ -393,8 +393,6 @@ Wire Wire Line
 	1900 6800 1900 6950
 Wire Wire Line
 	3950 2200 3950 2250
-Wire Wire Line
-	1850 4150 1850 4450
 $Comp
 L power:+5V #PWR0115
 U 1 1 5CC97423
@@ -582,26 +580,26 @@ F 3 "~" H 3700 4600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Conn_01x06_Female J62
+L Connector:Conn_01x07_Male J62
 U 1 1 5CD06D99
-P 1550 4800
-F 0 "J62" H 1577 4826 50  0000 L CNN
-F 1 "4uni" H 1577 4735 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical" H 1550 4800 50  0001 C CNN
-F 3 "~" H 1550 4800 50  0001 C CNN
-	1    1550 4800
-	1    0    0    -1  
+P 1550 4900
+F 0 "J62" H 1350 4950 50  0000 L CNN
+F 1 "4uni" H 1350 4850 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x07_P2.54mm_Vertical_no_lines" H 1550 4900 50  0001 C CNN
+F 3 "~" H 1550 4900 50  0001 C CNN
+	1    1550 4900
+	-1   0    0    -1  
 $EndComp
 $Comp
-L Connector:Conn_01x06_Female J63
+L Connector:Conn_01x07_Male J63
 U 1 1 5CD06E9E
-P 1550 5650
-F 0 "J63" H 1577 5676 50  0000 L CNN
-F 1 "4uni" H 1577 5585 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical" H 1550 5650 50  0001 C CNN
-F 3 "~" H 1550 5650 50  0001 C CNN
-	1    1550 5650
-	1    0    0    -1  
+P 1550 5750
+F 0 "J63" H 1350 5800 50  0000 L CNN
+F 1 "4uni" H 1350 5700 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x07_P2.54mm_Vertical_no_lines" H 1550 5750 50  0001 C CNN
+F 3 "~" H 1550 5750 50  0001 C CNN
+	1    1550 5750
+	-1   0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR0128
@@ -627,12 +625,12 @@ Wire Wire Line
 $Comp
 L power:GND #PWR0130
 U 1 1 5CD19A78
-P 700 5550
-F 0 "#PWR0130" H 700 5300 50  0001 C CNN
-F 1 "GND" H 705 5377 50  0000 C CNN
-F 2 "" H 700 5550 50  0001 C CNN
-F 3 "" H 700 5550 50  0001 C CNN
-	1    700  5550
+P 650 5550
+F 0 "#PWR0130" H 650 5300 50  0001 C CNN
+F 1 "GND" H 655 5377 50  0000 C CNN
+F 2 "" H 650 5550 50  0001 C CNN
+F 3 "" H 650 5550 50  0001 C CNN
+	1    650  5550
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1070,83 +1068,24 @@ Text GLabel 5750 5950 1    50   Input ~ 0
 Wire Wire Line
 	6400 3900 6600 3900
 Wire Wire Line
-	1350 5100 1250 5100
-Wire Wire Line
-	1250 5100 1250 5950
-Wire Wire Line
-	1250 5950 1350 5950
-Wire Wire Line
-	1350 5000 1150 5000
-Wire Wire Line
-	1150 5000 1150 5850
-Wire Wire Line
-	1150 5850 1350 5850
-Wire Wire Line
-	1050 5750 1350 5750
-Wire Wire Line
-	1050 4900 1050 5750
-Wire Wire Line
-	950  5650 1350 5650
-Wire Wire Line
-	950  4800 950  5650
-Wire Wire Line
-	850  5550 1350 5550
-Wire Wire Line
-	850  4700 850  5550
-Wire Wire Line
-	1350 5450 700  5450
-Wire Wire Line
-	700  5450 700  5550
+	650  5450 650  5550
 Wire Wire Line
 	1350 4600 700  4600
 Wire Wire Line
 	700  4600 700  4500
-Wire Wire Line
-	850  4700 1350 4700
-Wire Wire Line
-	950  4800 1350 4800
-Wire Wire Line
-	1050 4900 1350 4900
 $Comp
-L Connector:Conn_01x06_Female J64
+L Connector:Conn_01x07_Male J64
 U 1 1 5D9D2441
-P 1550 6500
-F 0 "J64" H 1577 6526 50  0000 L CNN
-F 1 "4uni" H 1577 6435 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical" H 1550 6500 50  0001 C CNN
-F 3 "~" H 1550 6500 50  0001 C CNN
-	1    1550 6500
-	1    0    0    -1  
+P 1550 6600
+F 0 "J64" H 1350 6650 50  0000 L CNN
+F 1 "4uni" H 1350 6550 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x07_P2.54mm_Vertical_no_lines" H 1550 6600 50  0001 C CNN
+F 3 "~" H 1550 6600 50  0001 C CNN
+	1    1550 6600
+	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	1350 6300 700  6300
-Wire Wire Line
-	700  6300 700  6250
-Wire Wire Line
-	1350 6400 850  6400
-Wire Wire Line
-	850  6400 850  5550
-Connection ~ 850  5550
-Wire Wire Line
-	1350 6500 950  6500
-Wire Wire Line
-	950  6500 950  5650
-Connection ~ 950  5650
-Wire Wire Line
-	1350 6600 1050 6600
-Wire Wire Line
-	1050 6600 1050 5750
-Connection ~ 1050 5750
-Wire Wire Line
-	1350 6700 1150 6700
-Wire Wire Line
-	1150 6700 1150 5850
-Connection ~ 1150 5850
-Wire Wire Line
-	1350 6800 1250 6800
-Wire Wire Line
-	1250 6800 1250 5950
-Connection ~ 1250 5950
+	650  6300 650  6250
 $Comp
 L power:+3.3V #PWR0107
 U 1 1 5DA12D24
@@ -1172,12 +1111,12 @@ $EndComp
 $Comp
 L power:+5V #PWR0111
 U 1 1 5DA15AB8
-P 700 6250
-F 0 "#PWR0111" H 700 6100 50  0001 C CNN
-F 1 "+5V" H 715 6423 50  0000 C CNN
-F 2 "" H 700 6250 50  0001 C CNN
-F 3 "" H 700 6250 50  0001 C CNN
-	1    700  6250
+P 650 6250
+F 0 "#PWR0111" H 650 6100 50  0001 C CNN
+F 1 "+5V" H 665 6423 50  0000 C CNN
+F 2 "" H 650 6250 50  0001 C CNN
+F 3 "" H 650 6250 50  0001 C CNN
+	1    650  6250
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -1776,7 +1715,7 @@ Text GLabel 4600 3950 2    50   Input ~ 0
 X1GND
 Text GLabel 4600 2150 2    50   Input ~ 0
 X1GND
-Text GLabel 1850 4450 3    50   Input ~ 0
+Text GLabel 1850 4250 3    50   Input ~ 0
 X1GND
 Text GLabel 4450 5200 3    50   Input ~ 0
 X1GND
@@ -1784,4 +1723,80 @@ Wire Wire Line
 	4550 5100 4450 5100
 Wire Wire Line
 	4450 5100 4450 5200
+Wire Wire Line
+	1200 6800 1350 6800
+Wire Wire Line
+	1100 6700 1350 6700
+Wire Wire Line
+	1000 6600 1350 6600
+Wire Wire Line
+	900  6500 1350 6500
+Wire Wire Line
+	800  6400 1350 6400
+Wire Wire Line
+	650  6300 1350 6300
+Wire Wire Line
+	1200 5100 1200 5950
+Wire Wire Line
+	1100 5000 1100 5850
+Wire Wire Line
+	1000 4900 1000 5750
+Wire Wire Line
+	900  4800 900  5650
+Wire Wire Line
+	800  4700 800  5550
+Wire Wire Line
+	800  5550 1350 5550
+Connection ~ 800  5550
+Wire Wire Line
+	800  5550 800  6400
+Wire Wire Line
+	900  5650 1350 5650
+Connection ~ 900  5650
+Wire Wire Line
+	900  5650 900  6500
+Wire Wire Line
+	1000 5750 1350 5750
+Connection ~ 1000 5750
+Wire Wire Line
+	1000 5750 1000 6600
+Wire Wire Line
+	1100 5850 1350 5850
+Connection ~ 1100 5850
+Wire Wire Line
+	1100 5850 1100 6700
+Wire Wire Line
+	1200 5950 1350 5950
+Connection ~ 1200 5950
+Wire Wire Line
+	1200 5950 1200 6800
+Wire Wire Line
+	1350 6900 1300 6900
+Wire Wire Line
+	1300 6900 1300 6050
+Wire Wire Line
+	1300 6050 1350 6050
+Wire Wire Line
+	650  5450 1350 5450
+Wire Wire Line
+	1300 6050 1300 5200
+Wire Wire Line
+	1300 5200 1350 5200
+Connection ~ 1300 6050
+Wire Wire Line
+	1200 5100 1350 5100
+Wire Wire Line
+	1100 5000 1350 5000
+Wire Wire Line
+	1000 4900 1350 4900
+Wire Wire Line
+	900  4800 1350 4800
+Wire Wire Line
+	800  4700 1350 4700
+Text GLabel 1750 4250 3    50   Input ~ 0
+X2GND
+Wire Wire Line
+	1850 4250 1850 4150
+Wire Wire Line
+	1750 4150 1750 4250
 $EndSCHEMATC
