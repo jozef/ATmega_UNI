@@ -46,7 +46,7 @@ U 1 1 5CC7246D
 P 3600 2400
 F 0 "C11" V 3371 2400 50  0000 C CNN
 F 1 "22pF" V 3462 2400 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 3600 2400 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_no_lines" H 3600 2400 50  0001 C CNN
 F 3 "~" H 3600 2400 50  0001 C CNN
 	1    3600 2400
 	0    -1   -1   0   
@@ -57,7 +57,7 @@ U 1 1 5CC724B6
 P 3600 2000
 F 0 "C12" V 3371 2000 50  0000 C CNN
 F 1 "22pF" V 3462 2000 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 3600 2000 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_no_lines" H 3600 2000 50  0001 C CNN
 F 3 "~" H 3600 2000 50  0001 C CNN
 	1    3600 2000
 	0    -1   -1   0   
@@ -311,7 +311,7 @@ U 1 1 5CC7715F
 P 2250 5650
 F 0 "C2" V 2400 5650 50  0000 C CNN
 F 1 "100nF" V 2500 5650 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 2250 5650 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_no_lines" H 2250 5650 50  0001 C CNN
 F 3 "~" H 2250 5650 50  0001 C CNN
 	1    2250 5650
 	0    1    1    0   
@@ -839,17 +839,6 @@ Wire Wire Line
 Wire Wire Line
 	3100 4150 3100 4100
 $Comp
-L Connector:Conn_01x01_Male J13
-U 1 1 5D4C78CE
-P 7000 2000
-F 0 "J13" H 7106 2178 50  0000 C CNN
-F 1 "3.3V" H 7106 2087 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 7000 2000 50  0001 C CNN
-F 3 "~" H 7000 2000 50  0001 C CNN
-	1    7000 2000
-	1    0    0    -1  
-$EndComp
-$Comp
 L Connector:Conn_01x08_Male Je93
 U 1 1 5D9AD53E
 P 8750 2900
@@ -1119,8 +1108,6 @@ F 3 "" H 650 6250 50  0001 C CNN
 	1    650  6250
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	7200 2000 7250 2000
 $Comp
 L power:+3.3V #PWR0118
 U 1 1 5D95152D
@@ -1134,7 +1121,6 @@ F 3 "" H 7250 1500 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	7250 1500 7250 2000
-Connection ~ 7250 2000
 Wire Wire Line
 	7250 2000 7350 2000
 $Comp
@@ -1799,4 +1785,25 @@ Wire Wire Line
 	1850 4250 1850 4150
 Wire Wire Line
 	1750 4150 1750 4250
+$Comp
+L Device:Fuse_Small F2
+U 1 1 5DBC689E
+P 7050 4450
+F 0 "F2" H 7050 4635 50  0000 C CNN
+F 1 "1206 PPTC <200mA" H 7050 4544 50  0000 C CNN
+F 2 "Fuse:Fuse_1206_3216Metric_Pad1.42x1.75mm_HandSolder_no_lines" H 7050 4450 50  0001 C CNN
+F 3 "~" H 7050 4450 50  0001 C CNN
+	1    7050 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6700 4750 6700 4450
+Wire Wire Line
+	6700 4450 6950 4450
+Connection ~ 6700 4750
+Wire Wire Line
+	7400 4750 7400 4450
+Wire Wire Line
+	7400 4450 7150 4450
+Connection ~ 7400 4750
 $EndSCHEMATC
