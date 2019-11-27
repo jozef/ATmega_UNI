@@ -1460,7 +1460,7 @@ F 1 "1k" V 7266 6150 50  0000 C CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P3.81mm_Vertical" V 7080 6150 50  0001 C CNN
 F 3 "~" H 7150 6150 50  0001 C CNN
 	1    7150 6150
-	0    -1   -1   0   
+	0    1    1    0   
 $EndComp
 Wire Wire Line
 	7400 5800 7400 6150
@@ -1479,7 +1479,6 @@ OR\n←→
 Wire Wire Line
 	7000 5800 7000 6150
 Connection ~ 7000 5800
-Connection ~ 7000 6150
 $Comp
 L Device:LED D12
 U 1 1 5DB94DE7
@@ -1823,4 +1822,5 @@ Wire Wire Line
 Connection ~ 10050 1300
 Wire Wire Line
 	10050 1300 10050 1900
+Connection ~ 7000 6150
 $EndSCHEMATC
