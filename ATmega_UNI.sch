@@ -960,34 +960,34 @@ PDIP26
 $Comp
 L power:GND #PWR0121
 U 1 1 5D870587
-P 7750 4250
-F 0 "#PWR0121" H 7750 4000 50  0001 C CNN
-F 1 "GND" H 7755 4077 50  0000 C CNN
-F 2 "" H 7750 4250 50  0001 C CNN
-F 3 "" H 7750 4250 50  0001 C CNN
-	1    7750 4250
+P 8000 4350
+F 0 "#PWR0121" H 8000 4100 50  0001 C CNN
+F 1 "GND" H 8005 4177 50  0000 C CNN
+F 2 "" H 8000 4350 50  0001 C CNN
+F 3 "" H 8000 4350 50  0001 C CNN
+	1    8000 4350
 	1    0    0    -1  
 $EndComp
 $Comp
 L Connector:Conn_01x02_Male J99
 U 1 1 5D878417
-P 8050 4050
-F 0 "J99" H 8023 3930 50  0000 R CNN
-F 1 "extra_gnd" H 8023 4021 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 8050 4050 50  0001 C CNN
-F 3 "~" H 8050 4050 50  0001 C CNN
-	1    8050 4050
+P 8300 4150
+F 0 "J99" H 8273 4030 50  0000 R CNN
+F 1 "extra_gnd" H 8273 4121 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 8300 4150 50  0001 C CNN
+F 3 "~" H 8300 4150 50  0001 C CNN
+	1    8300 4150
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	7850 4050 7750 4050
+	8100 4150 8000 4150
 Wire Wire Line
-	7750 4050 7750 4250
+	8000 4150 8000 4350
 Wire Wire Line
-	7850 3950 7750 3950
+	8100 4050 8000 4050
 Wire Wire Line
-	7750 3950 7750 4050
-Connection ~ 7750 4050
+	8000 4050 8000 4150
+Connection ~ 8000 4150
 $Comp
 L Connector:Conn_01x01_Male J79
 U 1 1 5D87D7CA
@@ -1207,19 +1207,19 @@ Wire Wire Line
 $Comp
 L Connector:Conn_01x01_Male J98
 U 1 1 5DB19EEC
-P 8050 3700
-F 0 "J98" H 8023 3580 50  0000 R CNN
-F 1 "extra_gnd" H 8023 3671 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical_no_lines" H 8050 3700 50  0001 C CNN
-F 3 "~" H 8050 3700 50  0001 C CNN
-	1    8050 3700
+P 8300 3800
+F 0 "J98" H 8273 3680 50  0000 R CNN
+F 1 "extra_gnd" H 8273 3771 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical_no_lines" H 8300 3800 50  0001 C CNN
+F 3 "~" H 8300 3800 50  0001 C CNN
+	1    8300 3800
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	7750 3950 7750 3700
+	8000 4050 8000 3800
 Wire Wire Line
-	7750 3700 7850 3700
-Connection ~ 7750 3950
+	8000 3800 8100 3800
+Connection ~ 8000 4050
 $Comp
 L Connector:Conn_01x04_Male J96
 U 1 1 5DA01DBB
@@ -1823,4 +1823,20 @@ Connection ~ 10050 1300
 Wire Wire Line
 	10050 1300 10050 1900
 Connection ~ 7000 6150
+$Comp
+L Connector:Conn_01x01_Male J100
+U 1 1 5DEE9FC2
+P 8300 3600
+F 0 "J100" H 8273 3480 50  0000 R CNN
+F 1 "extra_gnd" H 8273 3571 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical_no_lines" H 8300 3600 50  0001 C CNN
+F 3 "~" H 8300 3600 50  0001 C CNN
+	1    8300 3600
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8100 3600 8000 3600
+Wire Wire Line
+	8000 3600 8000 3800
+Connection ~ 8000 3800
 $EndSCHEMATC
