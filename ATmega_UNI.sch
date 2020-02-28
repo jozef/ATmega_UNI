@@ -574,7 +574,7 @@ U 1 1 5CD06A31
 P 3700 4600
 F 0 "J611" H 3728 4576 50  0000 L CNN
 F 1 "I2C" H 3728 4485 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x05_P2.54mm_Vertical" H 3700 4600 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x05_P2.54mm_Vertical_no_lines" H 3700 4600 50  0001 C CNN
 F 3 "~" H 3700 4600 50  0001 C CNN
 	1    3700 4600
 	1    0    0    -1  
@@ -612,12 +612,6 @@ F 3 "" H 2900 4450 50  0001 C CNN
 	1    2900 4450
 	1    0    0    -1  
 $EndComp
-Text GLabel 3500 4600 0    50   Input ~ 0
-SDA
-Text GLabel 3500 4700 0    50   Input ~ 0
-SCL
-Wire Wire Line
-	3500 4500 3000 4500
 Wire Wire Line
 	3500 4400 2900 4400
 Wire Wire Line
@@ -1047,9 +1041,6 @@ Text GLabel 4600 3850 2    50   Input ~ 0
 +5V_jmp
 Text GLabel 1850 1150 1    50   Input ~ 0
 +5V_jmp
-Wire Wire Line
-	3000 3850 3000 4500
-Connection ~ 3000 3850
 Text GLabel 5750 5950 1    50   Input ~ 0
 +5V_jmp
 Wire Wire Line
@@ -1839,4 +1830,10 @@ Wire Wire Line
 Wire Wire Line
 	8000 3600 8000 3800
 Connection ~ 8000 3800
+Text GLabel 3500 4500 0    50   Input ~ 0
+SCK
+Text GLabel 3500 4600 0    50   Input ~ 0
+MISO
+Text GLabel 3500 4700 0    50   Input ~ 0
+MOSI
 $EndSCHEMATC
