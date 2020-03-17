@@ -963,26 +963,6 @@ F 3 "" H 8000 4350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Conn_01x02_Male J99
-U 1 1 5D878417
-P 8300 4150
-F 0 "J99" H 8273 4030 50  0000 R CNN
-F 1 "extra_gnd" H 8273 4121 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 8300 4150 50  0001 C CNN
-F 3 "~" H 8300 4150 50  0001 C CNN
-	1    8300 4150
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	8100 4150 8000 4150
-Wire Wire Line
-	8000 4150 8000 4350
-Wire Wire Line
-	8100 4050 8000 4050
-Wire Wire Line
-	8000 4050 8000 4150
-Connection ~ 8000 4150
-$Comp
 L Connector:Conn_01x01_Male J79
 U 1 1 5D87D7CA
 P 3600 6600
@@ -1207,10 +1187,7 @@ F 3 "~" H 8300 3800 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	8000 4050 8000 3800
-Wire Wire Line
 	8000 3800 8100 3800
-Connection ~ 8000 4050
 $Comp
 L Connector:Conn_01x04_Male J96
 U 1 1 5DA01DBB
@@ -1689,7 +1666,7 @@ X1GND
 Text GLabel 1850 4250 3    50   Input ~ 0
 X1GND
 Text GLabel 4450 5200 3    50   Input ~ 0
-X1GND
+X2GND
 Wire Wire Line
 	4550 5100 4450 5100
 Wire Wire Line
@@ -1836,4 +1813,6 @@ Text GLabel 3500 4600 0    50   Input ~ 0
 MISO
 Text GLabel 3500 4700 0    50   Input ~ 0
 MOSI
+Wire Wire Line
+	8000 3800 8000 4350
 $EndSCHEMATC
