@@ -155,12 +155,12 @@ Wire Wire Line
 $Comp
 L power:GND #PWR0106
 U 1 1 5CC73029
-P 8350 1200
-F 0 "#PWR0106" H 8350 950 50  0001 C CNN
-F 1 "GND" H 8355 1027 50  0000 C CNN
-F 2 "" H 8350 1200 50  0001 C CNN
-F 3 "" H 8350 1200 50  0001 C CNN
-	1    8350 1200
+P 8450 750
+F 0 "#PWR0106" H 8450 500 50  0001 C CNN
+F 1 "GND" H 8455 577 50  0000 C CNN
+F 2 "" H 8450 750 50  0001 C CNN
+F 3 "" H 8450 750 50  0001 C CNN
+	1    8450 750 
 	1    0    0    -1  
 $EndComp
 Text GLabel 2450 2050 2    50   Input ~ 0
@@ -334,48 +334,33 @@ Wire Wire Line
 Connection ~ 2500 6000
 Wire Wire Line
 	2150 6000 2100 6000
-Text GLabel 10050 1900 2    50   Input ~ 0
+Text GLabel 10150 1900 2    50   Input ~ 0
 SCK
 $Comp
 L Device:R R11
 U 1 1 5CC77F82
-P 10200 900
-F 0 "R11" V 10407 900 50  0000 C CNN
-F 1 "1k" V 10316 900 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 10130 900 50  0001 C CNN
-F 3 "~" H 10200 900 50  0001 C CNN
-	1    10200 900 
+P 10250 1300
+F 0 "R11" V 10457 1300 50  0000 C CNN
+F 1 "1k" V 10366 1300 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 10180 1300 50  0001 C CNN
+F 3 "~" H 10250 1300 50  0001 C CNN
+	1    10250 1300
 	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:LED D1
-U 1 1 5CC780AA
-P 10650 900
-F 0 "D1" H 10642 645 50  0000 C CNN
-F 1 "SCK" H 10642 736 50  0000 C CNN
-F 2 "LED_THT:LED_D3.0mm_doubleside" H 10650 900 50  0001 C CNN
-F 3 "~" H 10650 900 50  0001 C CNN
-	1    10650 900 
-	-1   0    0    1   
 $EndComp
 $Comp
 L power:GND #PWR0108
 U 1 1 5CC7813D
-P 10950 1400
-F 0 "#PWR0108" H 10950 1150 50  0001 C CNN
-F 1 "GND" H 10955 1227 50  0000 C CNN
-F 2 "" H 10950 1400 50  0001 C CNN
-F 3 "" H 10950 1400 50  0001 C CNN
-	1    10950 1400
+P 11000 1400
+F 0 "#PWR0108" H 11000 1150 50  0001 C CNN
+F 1 "GND" H 11005 1227 50  0000 C CNN
+F 2 "" H 11000 1400 50  0001 C CNN
+F 3 "" H 11000 1400 50  0001 C CNN
+	1    11000 1400
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	10350 900  10450 900 
-Wire Wire Line
-	10800 900  10950 900 
-Text GLabel 10050 2000 2    50   Input ~ 0
+Text GLabel 10150 2000 2    50   Input ~ 0
 MISO
-Text GLabel 10050 2100 2    50   Input ~ 0
+Text GLabel 10150 2100 2    50   Input ~ 0
 MOSI
 Text GLabel 2450 2950 2    50   Input ~ 0
 ~RST
@@ -789,7 +774,7 @@ Wire Wire Line
 	4200 6800 4550 6800
 Wire Wire Line
 	4550 6800 4550 6750
-Text GLabel 10050 2200 2    50   Input ~ 0
+Text GLabel 10150 2200 2    50   Input ~ 0
 PDIP16
 $Comp
 L Jumper:Jumper_2_Open JP9
@@ -844,14 +829,14 @@ F 3 "~" H 8750 2900 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Connector:Conn_01x06_Male Je92
+L Connector:Conn_01x07_Male Je92
 U 1 1 5DA22E04
-P 9000 2200
-F 0 "Je92" H 8800 2150 50  0000 L CNN
-F 1 "eD8-eD13" H 8650 2050 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 9000 2200 50  0001 C CNN
-F 3 "~" H 9000 2200 50  0001 C CNN
-	1    9000 2200
+P 9000 2100
+F 0 "Je92" H 8800 2050 50  0000 L CNN
+F 1 "eD8-eD13" H 8650 1950 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x07_P2.54mm_Vertical_no_lines" H 9000 2100 50  0001 C CNN
+F 3 "~" H 9000 2100 50  0001 C CNN
+	1    9000 2100
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -882,29 +867,18 @@ PDIP12
 Text GLabel 9750 2500 2    50   Input ~ 0
 PDIP13
 Wire Wire Line
-	8550 2200 8750 2200
-Wire Wire Line
 	8750 1650 8750 2200
 $Comp
-L Connector:Conn_01x06_Male J92
+L Connector:Conn_01x07_Male J92
 U 1 1 5DA89671
-P 9850 2200
-F 0 "J92" H 9700 2150 50  0000 L CNN
-F 1 "D8-D13" H 9600 2050 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 9850 2200 50  0001 C CNN
-F 3 "~" H 9850 2200 50  0001 C CNN
-	1    9850 2200
+P 9850 2100
+F 0 "J92" H 9700 2050 50  0000 L CNN
+F 1 "D8-D13" H 9600 1950 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x07_P2.54mm_Vertical_no_lines" H 9850 2100 50  0001 C CNN
+F 3 "~" H 9850 2100 50  0001 C CNN
+	1    9850 2100
 	1    0    0    1   
 $EndComp
-Wire Wire Line
-	8650 1150 8350 1150
-Wire Wire Line
-	8350 1150 8350 1200
-Wire Wire Line
-	8650 1150 8650 1800
-Wire Wire Line
-	8750 2200 8800 2200
-Connection ~ 8750 2200
 Wire Wire Line
 	8550 2300 8800 2300
 Wire Wire Line
@@ -913,9 +887,9 @@ Wire Wire Line
 	8550 2100 8800 2100
 Wire Wire Line
 	8550 2000 8800 2000
-Text GLabel 10050 2300 2    50   Input ~ 0
+Text GLabel 10150 2300 2    50   Input ~ 0
 PDIP15
-Text GLabel 10050 2400 2    50   Input ~ 0
+Text GLabel 10150 2400 2    50   Input ~ 0
 PDIP14
 Wire Wire Line
 	8550 1900 8800 1900
@@ -1450,42 +1424,18 @@ Connection ~ 7000 5800
 $Comp
 L Device:LED D12
 U 1 1 5DB94DE7
-P 10650 1300
-F 0 "D12" H 10650 1450 50  0000 C CNN
-F 1 "PWR" H 10650 1550 50  0000 C CNN
-F 2 "LED_SMD.debian:LED_0603_1608Metric_symbol" H 10650 1300 50  0001 C CNN
-F 3 "~" H 10650 1300 50  0001 C CNN
-	1    10650 1300
+P 10700 1300
+F 0 "D12" H 10700 1450 50  0000 C CNN
+F 1 "PWR" H 10700 1550 50  0000 C CNN
+F 2 "LED_SMD.debian:LED_0603_1608Metric_symbol" H 10700 1300 50  0001 C CNN
+F 3 "~" H 10700 1300 50  0001 C CNN
+	1    10700 1300
 	-1   0    0    1   
 $EndComp
-$Comp
-L Device:R R112
-U 1 1 5DB9591D
-P 10200 1300
-F 0 "R112" V 10407 1300 50  0000 C CNN
-F 1 "1k" V 10316 1300 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P3.81mm_Vertical" V 10130 1300 50  0001 C CNN
-F 3 "~" H 10200 1300 50  0001 C CNN
-	1    10200 1300
-	0    1    1    0   
-$EndComp
 Wire Wire Line
-	10350 1300 10450 1300
+	10850 1300 11000 1300
 Wire Wire Line
-	10800 1300 10950 1300
-Wire Wire Line
-	10950 1300 10950 1400
-Wire Wire Line
-	10950 900  10950 1300
-Connection ~ 10950 1300
-Wire Wire Line
-	10450 900  10450 1300
-Connection ~ 10450 900 
-Wire Wire Line
-	10450 900  10500 900 
-Connection ~ 10450 1300
-Wire Wire Line
-	10450 1300 10500 1300
+	11000 1300 11000 1400
 $Comp
 L Connector:Conn_01x02_Female J613
 U 1 1 5DBCD640
@@ -1785,11 +1735,6 @@ Connection ~ 2800 5650
 Wire Wire Line
 	3200 5250 3200 5650
 Connection ~ 3200 5650
-Wire Wire Line
-	10050 900  10050 1300
-Connection ~ 10050 1300
-Wire Wire Line
-	10050 1300 10050 1900
 Connection ~ 7000 6150
 $Comp
 L Connector:Conn_01x01_Male J100
@@ -1815,4 +1760,82 @@ Text GLabel 3500 4700 0    50   Input ~ 0
 MOSI
 Wire Wire Line
 	8000 3800 8000 4350
+$Comp
+L Device:C_Small C0
+U 1 1 5EC7BFBA
+P 8550 1200
+F 0 "C0" V 8700 1200 50  0000 C CNN
+F 1 "100nF" V 8800 1200 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_no_lines" H 8550 1200 50  0001 C CNN
+F 3 "~" H 8550 1200 50  0001 C CNN
+	1    8550 1200
+	1    0    0    -1  
+$EndComp
+Connection ~ 8750 2200
+Wire Wire Line
+	8750 2200 8800 2200
+Wire Wire Line
+	8550 2200 8750 2200
+Wire Wire Line
+	8550 1700 8550 1450
+Wire Wire Line
+	8650 1100 8550 1100
+Wire Wire Line
+	8650 1100 8650 1800
+Wire Wire Line
+	8550 1100 8350 1100
+Connection ~ 8550 1100
+Wire Wire Line
+	8550 1700 8800 1700
+Wire Wire Line
+	8800 1700 8800 1800
+Connection ~ 8550 1700
+Wire Wire Line
+	10050 1900 10150 1900
+Wire Wire Line
+	10050 2000 10150 2000
+Wire Wire Line
+	10050 2100 10150 2100
+Wire Wire Line
+	10050 2200 10150 2200
+Wire Wire Line
+	10050 2300 10150 2300
+Wire Wire Line
+	10050 2400 10150 2400
+Text GLabel 9900 1300 0    50   Input ~ 0
+SCK
+Wire Wire Line
+	9900 1300 10100 1300
+Text GLabel 10150 1800 2    50   Input ~ 0
+PDIP21
+Wire Wire Line
+	10050 1800 10150 1800
+$Comp
+L Device:C_Small C02
+U 1 1 5EDAFF47
+P 8350 1200
+F 0 "C02" V 8121 1200 50  0000 C CNN
+F 1 "100nF" V 8212 1200 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm_doubleside" H 8350 1200 50  0001 C CNN
+F 3 "~" H 8350 1200 50  0001 C CNN
+	1    8350 1200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8550 1100 8550 650 
+Wire Wire Line
+	8550 650  8450 650 
+Wire Wire Line
+	8450 650  8450 750 
+Text Notes 8500 1400 2    50   ~ 0
+OR\n←→
+Wire Wire Line
+	8350 1300 8350 1450
+Wire Wire Line
+	8350 1450 8550 1450
+Connection ~ 8550 1450
+Wire Wire Line
+	8550 1450 8550 1300
+Wire Wire Line
+	10400 1300 10550 1300
 $EndSCHEMATC
