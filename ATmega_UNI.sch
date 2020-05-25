@@ -67,7 +67,7 @@ L Device:Crystal_Small Y1
 U 1 1 5CC72598
 P 3400 2200
 F 0 "Y1" V 3446 2112 50  0000 R CNN
-F 1 "Crystal_Small" V 3355 2112 50  0000 R CNN
+F 1 "16MHz" V 3355 2112 50  0000 R CNN
 F 2 "Crystal:Crystal_HC49-U_Vertical" H 3400 2200 50  0001 C CNN
 F 3 "~" H 3400 2200 50  0001 C CNN
 	1    3400 2200
@@ -769,7 +769,7 @@ Wire Wire Line
 	4200 6200 4550 6200
 Connection ~ 4550 6200
 Wire Wire Line
-	4200 6500 4400 6500
+	4200 6500 4300 6500
 Wire Wire Line
 	4200 6800 4550 6800
 Wire Wire Line
@@ -1838,4 +1838,22 @@ Wire Wire Line
 	8550 1450 8550 1300
 Wire Wire Line
 	10400 1300 10550 1300
+$Comp
+L Connector:Conn_01x01_Male J81
+U 1 1 5ECCC824
+P 3800 6400
+F 0 "J81" H 3906 6591 50  0000 C CNN
+F 1 "~RST" H 3906 6493 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical_closed" H 3800 6400 50  0001 C CNN
+F 3 "~" H 3800 6400 50  0001 C CNN
+	1    3800 6400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 6400 4300 6400
+Wire Wire Line
+	4300 6400 4300 6500
+Connection ~ 4300 6500
+Wire Wire Line
+	4300 6500 4400 6500
 $EndSCHEMATC
