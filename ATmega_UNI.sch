@@ -255,10 +255,6 @@ Text GLabel 5800 1750 0    50   Input ~ 0
 PDIP25
 Text GLabel 5800 1650 0    50   Input ~ 0
 PDIP26
-Text GLabel 5800 1550 0    50   Input ~ 0
-SDA
-Text GLabel 5800 1450 0    50   Input ~ 0
-SCL
 Text GLabel 1250 1450 0    50   Input ~ 0
 PDIP21
 Text GLabel 1950 1150 1    50   Input ~ 0
@@ -283,10 +279,6 @@ Text GLabel 2450 2550 2    50   Input ~ 0
 PDIP25
 Text GLabel 2450 2650 2    50   Input ~ 0
 PDIP26
-Text GLabel 2450 2750 2    50   Input ~ 0
-SDA
-Text GLabel 2450 2850 2    50   Input ~ 0
-SCL
 Text GLabel 2450 3150 2    50   Input ~ 0
 RXD
 Text GLabel 2450 3250 2    50   Input ~ 0
@@ -391,22 +383,20 @@ F 3 "" H 8850 5500 50  0001 C CNN
 $EndComp
 Text GLabel 7350 2400 0    50   Input ~ 0
 RAW
-Text GLabel 6700 3100 0    50   Input ~ 0
+Text GLabel 7200 3400 2    50   Input ~ 0
 SCL
-Text GLabel 6700 2900 0    50   Input ~ 0
+Text GLabel 6750 3400 0    50   Input ~ 0
 SDA
 Wire Wire Line
 	7300 2900 7300 3000
 Wire Wire Line
 	7300 3000 7350 3000
-Connection ~ 7300 2900
 Wire Wire Line
 	7300 2900 7350 2900
 Wire Wire Line
 	7300 3100 7300 3200
 Wire Wire Line
 	7300 3200 7350 3200
-Connection ~ 7300 3100
 Wire Wire Line
 	7300 3100 7350 3100
 $Comp
@@ -473,10 +463,6 @@ Text GLabel 5800 3550 0    50   Input ~ 0
 PDIP25
 Text GLabel 5800 3450 0    50   Input ~ 0
 PDIP26
-Text GLabel 5800 3350 0    50   Input ~ 0
-SDA
-Text GLabel 5800 3250 0    50   Input ~ 0
-SCL
 Text GLabel 4600 4050 2    50   Input ~ 0
 XTAL1
 Text GLabel 4600 4150 2    50   Input ~ 0
@@ -692,14 +678,14 @@ Wire Wire Line
 Wire Wire Line
 	2500 6900 3400 6900
 $Comp
-L Connector:Conn_01x04_Male Je94
+L Connector:Conn_01x06_Male Je94
 U 1 1 5D47B8F5
-P 6950 2600
-F 0 "Je94" H 6850 2550 50  0000 C CNN
-F 1 "eA0-eA3" H 6850 2450 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 6950 2600 50  0001 C CNN
-F 3 "~" H 6950 2600 50  0001 C CNN
-	1    6950 2600
+P 6900 2700
+F 0 "Je94" H 6800 2650 50  0000 C CNN
+F 1 "eA0-eA3" H 6800 2550 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 6900 2700 50  0001 C CNN
+F 3 "~" H 6900 2700 50  0001 C CNN
+	1    6900 2700
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -898,32 +884,24 @@ Wire Wire Line
 Wire Wire Line
 	6700 2200 6700 2250
 Connection ~ 6850 2200
-Wire Wire Line
-	7150 2500 7350 2500
-Wire Wire Line
-	7150 2600 7350 2600
-Wire Wire Line
-	7150 2700 7350 2700
-Wire Wire Line
-	7150 2800 7350 2800
 $Comp
-L Connector:Conn_01x04_Male J94
+L Connector:Conn_01x06_Male J94
 U 1 1 5DB359C0
-P 6600 2600
-F 0 "J94" H 6850 2900 50  0000 C CNN
-F 1 "A0-A3" H 6850 2800 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 6600 2600 50  0001 C CNN
-F 3 "~" H 6600 2600 50  0001 C CNN
-	1    6600 2600
+P 6600 1650
+F 0 "J94" H 6850 1950 50  0000 C CNN
+F 1 "A0-A3" H 6850 1850 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 6600 1650 50  0001 C CNN
+F 3 "~" H 6600 1650 50  0001 C CNN
+	1    6600 1650
 	-1   0    0    -1  
 $EndComp
-Text GLabel 6400 2500 0    50   Input ~ 0
+Text GLabel 6400 1450 0    50   Input ~ 0
 PDIP23
-Text GLabel 6400 2600 0    50   Input ~ 0
+Text GLabel 6400 1550 0    50   Input ~ 0
 PDIP24
-Text GLabel 6400 2700 0    50   Input ~ 0
+Text GLabel 6400 1650 0    50   Input ~ 0
 PDIP25
-Text GLabel 6400 2800 0    50   Input ~ 0
+Text GLabel 6400 1750 0    50   Input ~ 0
 PDIP26
 $Comp
 L power:GND #PWR0121
@@ -1278,20 +1256,6 @@ Wire Wire Line
 	7700 5000 7700 5500
 Wire Wire Line
 	8100 5500 7700 5500
-Wire Wire Line
-	6700 2900 6850 2900
-Wire Wire Line
-	6700 3100 7100 3100
-Wire Wire Line
-	7100 3100 7100 3550
-Connection ~ 7100 3100
-Wire Wire Line
-	7100 3100 7300 3100
-Wire Wire Line
-	6850 2900 6850 3550
-Connection ~ 6850 2900
-Wire Wire Line
-	6850 2900 7300 2900
 $Comp
 L Device:R_Small R12
 U 1 1 5DAECE41
@@ -1856,4 +1820,58 @@ Wire Wire Line
 Connection ~ 4300 6500
 Wire Wire Line
 	4300 6500 4400 6500
+Wire Wire Line
+	7100 3400 7200 3400
+Wire Wire Line
+	7100 3400 7100 3550
+Wire Wire Line
+	6850 3400 6750 3400
+Wire Wire Line
+	6850 3400 6850 3550
+Wire Wire Line
+	7300 2900 7200 2900
+Connection ~ 7300 2900
+Connection ~ 7300 3100
+Text GLabel 2450 2750 2    50   Input ~ 0
+PDIP27
+Text GLabel 6400 1850 0    50   Input ~ 0
+PDIP27
+Text GLabel 2450 2850 2    50   Input ~ 0
+PDIP28
+Text GLabel 6400 1950 0    50   Input ~ 0
+PDIP28
+Wire Wire Line
+	7200 2900 7200 2950
+Wire Wire Line
+	7200 2950 6850 2950
+Wire Wire Line
+	6850 2950 6850 3400
+Connection ~ 7200 2900
+Connection ~ 6850 3400
+Connection ~ 7100 3400
+Wire Wire Line
+	7100 2500 7350 2500
+Wire Wire Line
+	7100 2600 7350 2600
+Wire Wire Line
+	7100 2700 7350 2700
+Wire Wire Line
+	7100 2800 7350 2800
+Wire Wire Line
+	7100 2900 7200 2900
+Wire Wire Line
+	7100 3000 7100 3100
+Wire Wire Line
+	7100 3100 7300 3100
+Connection ~ 7100 3100
+Wire Wire Line
+	7100 3100 7100 3400
+Text GLabel 5800 1550 0    50   Input ~ 0
+PDIP27
+Text GLabel 5800 1450 0    50   Input ~ 0
+PDIP28
+Text GLabel 5800 3350 0    50   Input ~ 0
+PDIP27
+Text GLabel 5800 3250 0    50   Input ~ 0
+PDIP28
 $EndSCHEMATC
