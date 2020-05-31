@@ -663,8 +663,6 @@ Wire Wire Line
 Connection ~ 2800 6000
 Wire Wire Line
 	3200 5750 3200 5650
-Text GLabel 10050 4050 1    50   Input ~ 0
-Jack_5V
 Wire Wire Line
 	1900 6800 3300 6800
 Text GLabel 2500 6900 0    50   Input ~ 0
@@ -1095,38 +1093,10 @@ Wire Wire Line
 	10050 4200 10300 4200
 Wire Wire Line
 	9800 4300 10300 4300
-Text GLabel 9950 5500 1    50   Input ~ 0
-Jack_5V
 Wire Wire Line
 	9250 5600 9250 5500
 Wire Wire Line
 	8850 5600 8850 5500
-$Comp
-L power:+5V #PWR0119
-U 1 1 5DAEF4A4
-P 9550 5500
-F 0 "#PWR0119" H 9550 5350 50  0001 C CNN
-F 1 "+5V" H 9565 5673 50  0000 C CNN
-F 2 "" H 9550 5500 50  0001 C CNN
-F 3 "" H 9550 5500 50  0001 C CNN
-	1    9550 5500
-	1    0    0    -1  
-$EndComp
-$Comp
-L Jumper:Jumper_2_Open JP91
-U 1 1 5DAEF4AB
-P 9750 5600
-F 0 "JP91" H 9750 5824 50  0000 C CNN
-F 1 "JCK→5V" H 9750 5733 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical_closed" H 9750 5600 50  0001 C CNN
-F 3 "~" H 9750 5600 50  0001 C CNN
-	1    9750 5600
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	9950 5600 9950 5500
-Wire Wire Line
-	9550 5600 9550 5500
 $Comp
 L Connector:Conn_01x01_Male J98
 U 1 1 5DB19EEC
@@ -1874,4 +1844,15 @@ Text GLabel 5800 3350 0    50   Input ~ 0
 PDIP27
 Text GLabel 5800 3250 0    50   Input ~ 0
 PDIP28
+$Comp
+L power:+5V #PWR?
+U 1 1 5ED4CEA3
+P 10050 4050
+F 0 "#PWR?" H 10050 3900 50  0001 C CNN
+F 1 "+5V" H 10065 4223 50  0000 C CNN
+F 2 "" H 10050 4050 50  0001 C CNN
+F 3 "" H 10050 4050 50  0001 C CNN
+	1    10050 4050
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
