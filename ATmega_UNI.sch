@@ -714,10 +714,8 @@ Text GLabel 5200 6000 0    50   Input ~ 0
 MISO
 Text GLabel 5700 6100 2    50   Input ~ 0
 MOSI
-Text GLabel 4950 6100 0    50   Input ~ 0
+Text GLabel 4900 6100 0    50   Input ~ 0
 SCK
-Wire Wire Line
-	4950 6100 5200 6100
 Wire Wire Line
 	5700 6000 5750 6000
 Wire Wire Line
@@ -730,34 +728,10 @@ Wire Wire Line
 	8550 1800 8650 1800
 Text GLabel 8750 1650 1    50   Input ~ 0
 ~eRST
-Text GLabel 4200 6800 0    50   Input ~ 0
+Text GLabel 4200 6700 0    50   Input ~ 0
 ~eRST
-$Comp
-L Jumper:Jumper_3_Open JP8
-U 1 1 5D6F7851
-P 4550 6500
-F 0 "JP8" V 4504 6587 50  0000 L CNN
-F 1 "SW_RST" V 4595 6587 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical_closed" H 4550 6500 50  0001 C CNN
-F 3 "~" H 4550 6500 50  0001 C CNN
-	1    4550 6500
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	4550 6200 4550 6250
-Wire Wire Line
-	4550 6200 5200 6200
-Text GLabel 4200 6200 0    50   Input ~ 0
+Text GLabel 5150 6200 0    50   Input ~ 0
 ~iRST
-Wire Wire Line
-	4200 6200 4550 6200
-Connection ~ 4550 6200
-Wire Wire Line
-	4200 6500 4300 6500
-Wire Wire Line
-	4200 6800 4550 6800
-Wire Wire Line
-	4550 6800 4550 6750
 Text GLabel 10150 2200 2    50   Input ~ 0
 PDIP16
 $Comp
@@ -1772,24 +1746,6 @@ Wire Wire Line
 	8550 1450 8550 1300
 Wire Wire Line
 	10400 1300 10550 1300
-$Comp
-L Connector:Conn_01x01_Male J81
-U 1 1 5ECCC824
-P 3800 6400
-F 0 "J81" H 3906 6591 50  0000 C CNN
-F 1 "~RST" H 3906 6493 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical_closed" H 3800 6400 50  0001 C CNN
-F 3 "~" H 3800 6400 50  0001 C CNN
-	1    3800 6400
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4000 6400 4300 6400
-Wire Wire Line
-	4300 6400 4300 6500
-Connection ~ 4300 6500
-Wire Wire Line
-	4300 6500 4400 6500
 Wire Wire Line
 	7100 3400 7200 3400
 Wire Wire Line
@@ -1917,4 +1873,39 @@ Wire Wire Line
 Wire Wire Line
 	9500 5900 9500 5600
 Connection ~ 9500 5600
+$Comp
+L Connector_Generic:Conn_02x02_Odd_Even J81
+U 1 1 5EFF1F5B
+P 4850 6500
+F 0 "J81" H 4900 6150 50  0000 C CNN
+F 1 "ICSP" H 4900 6250 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x02_P2.54mm_Vertical" H 4850 6500 50  0001 C CNN
+F 3 "~" H 4850 6500 50  0001 C CNN
+	1    4850 6500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4200 6500 4600 6500
+Wire Wire Line
+	5200 6200 5200 6500
+Wire Wire Line
+	5200 6500 5150 6500
+Wire Wire Line
+	5150 6200 5200 6200
+Connection ~ 5200 6200
+Wire Wire Line
+	4900 6100 5200 6100
+Wire Wire Line
+	5200 6600 5150 6600
+Wire Wire Line
+	4650 6600 4600 6600
+Wire Wire Line
+	4600 6600 4600 6500
+Connection ~ 4600 6500
+Wire Wire Line
+	4600 6500 4650 6500
+Wire Wire Line
+	4200 6700 5200 6700
+Wire Wire Line
+	5200 6700 5200 6600
 $EndSCHEMATC
